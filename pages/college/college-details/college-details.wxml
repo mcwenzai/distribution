@@ -1,0 +1,27 @@
+<!--pages/college/college-details/college-details.wxml-->
+<view class="college-details">
+    <view class="nav">
+        <view class="title {{navType ==1 ? 'active' : ''}}" bindtap="checkNav" data-type="1">视频</view>
+        <view class="title {{navType ==2 ? 'active' : ''}}" bindtap="checkNav" data-type="2">图文</view>
+    </view>
+    <block wx:if="{{navType == 1}}">
+        <no-data show="{{videoList.length<=0}}"></no-data>
+        <view class="content" bindtap="toVideoDetails" wx:for="{{videoList}}" wx:key="index" data-id="{{item.id}}">
+            <view class="img">
+                <image class="bgc" src="{{item.cover}}"></image>
+                <image class="play" src="../../../image/icon_play.png"></image>
+            </view>
+            <view class="text">{{item.title}}</view>
+        </view>
+    </block>
+    <block wx:if="{{navType == 2}}">
+        <no-data show="{{imageTextList.length<=0}}" ></no-data>
+        <view class="content" bindtap="toImageDetails" wx:for="{{imageTextList}}" wx:key="index" data-id="{{item.id}}">
+            <view class="img">
+                <image class="bgc" src="{{item.cover}}"></image>
+            </view>
+            <view class="text">{{item.title}}</view>
+        </view>
+    </block>
+
+</view>

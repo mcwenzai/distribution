@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "select-city-business-circle":"../select-city-business-circle/select-city-business-circle",
+    "select-bank":"../select-bank/select-bank"
+  }
+}

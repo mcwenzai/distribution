@@ -1,0 +1,73 @@
+/* pages/setting/setting.wxss */
+.setting{
+  min-height: 100vh;
+  background-color: #FBF9FD;
+  overflow: hidden;
+}
+.avatar{
+  width: 100%;
+  padding: 16rpx 20rpx 16rpx 40rpx;
+  height: 120rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  margin-top: 1px;
+  margin-bottom: 14rpx;
+}
+.avatar .arrows{
+  display: block;
+  width: 14rpx;
+  height: 24rpx;
+}
+.avatar-left{
+  display: flex;
+  align-items: center;
+}
+.avatar-left image{
+ display: block;
+ width: 88rpx;
+ height: 88rpx;
+ border-radius: 50%;
+}
+.avatar-left .name{
+  color: #333333;
+  font-size: 28rpx;
+  padding-left: 32rpx;
+}
+.cell{
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  justify-content: space-between;
+  padding: 0 20rpx 0  40rpx;
+  align-items: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #333333;
+  margin-bottom: 1px;
+}
+.cell .arrows{
+  display: block;
+  width: 14rpx;
+  height: 24rpx;
+}
+.cell .right{
+  padding-right: 28rpx;
+  font-size: 28rpx;
+  color: #999999;
+}
+.logout{
+  width: 640rpx;
+  height: 84rpx;
+  background: var(--themeColor);
+  border-radius: 40rpx; 
+  margin:80rpx auto 0;
+  text-align: center;
+  line-height: 84rpx;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 28rpx;
+}

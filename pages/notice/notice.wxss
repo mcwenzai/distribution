@@ -1,0 +1,85 @@
+page {
+  min-height: 100%;
+  background: #FBF9FD;
+}
+.notice {
+  width: 100%;
+}
+.notice .join {
+  width: 710rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  margin: 20rpx 20rpx 0;
+  position: relative;
+}
+.notice .join .join-notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28rpx;
+  margin: 0 28rpx;
+}
+.notice .join .join-notice .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notice .join .join-notice .title image {
+  width: 52rpx;
+  height: 52rpx;
+}
+.notice .join .join-notice .title text {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  margin-left: 27rpx;
+}
+.notice .join .join-notice .time {
+  font-size: 22rpx;
+  font-weight: bold;
+  color: #999;
+  z-index: 1;
+}
+.notice .join .handle {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  width: 200rpx;
+  height: 128rpx;
+}
+.notice .join .information {
+  margin: 25rpx 27rpx 0 28rpx;
+  padding-bottom: 24rpx;
+}
+.notice .join .information text {
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #999;
+}
+.notice .join .information .userinfo {
+  color: #F76C3F;
+}
+.notice .join .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 28rpx;
+  padding: 24rpx 0;
+  border-top: 2rpx solid #FBF9FD;
+}
+.notice .join .details text {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #666;
+}
+.notice .join .details image {
+  width: 10rpx;
+  height: 18rpx;
+}
+.notice .join .inse {
+  margin: 25rpx 27rpx 0;
+  padding-bottom: 28rpx;
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #999;
+}

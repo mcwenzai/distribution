@@ -1,0 +1,23 @@
+
+<!--pages/setting/setting.wxml-->
+<view class="user-info">
+   <view class="avatar" bindtap="openPhoto">
+    <view class="avatar-left">
+      <image  src="{{userInfo.avatar ? userInfo.avatar : '../../../image/tx.png'}}"></image>
+    </view>
+    <view class="avatar-right">
+      <view>修改</view>
+      <image class="arrows" src="../../../image/right.png"></image>
+    </view>
+    
+  </view>
+ 
+    <view class="cell">
+      <view class="lable">姓名</view>
+      <view class="text">{{userInfo.userName}}</view>
+    </view>
+    <!-- <view class="cell">
+      <view class="lable">我的联络人</view>
+      <view class="text">智超商互通</view>
+    </view> -->
+</view>

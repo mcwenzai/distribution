@@ -1,0 +1,84 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/my/my",
+        "pages/achievement/achievement",
+        "pages/wallet/wallet",
+        "pages/received/received",
+        "pages/withdrawal/withdrawal",
+        "pages/withdrawal/withdrawal-record/withdrawal-record",
+        "pages/withdrawal/withdrawal-status/withdrawal-status",
+        "pages/withdrawal/transaction-details/transaction-details",
+        "pages/order-details/order-details",
+        "pages/verification/verification",
+        "pages/verification/payment/payment",
+        "pages/notice/notice",
+        "pages/business-district/business-district",
+        "pages/business-district/business/business",
+        "pages/handle/handle",
+        "pages/management/management",
+        "pages/shop-details/shop-details",
+        "pages/management/detailed/detailed",
+        "pages/feedback/feedback",
+        "pages/earnings/earnings",
+        "pages/earnings/historicalEarnings/historicalEarnings",
+        "pages/setting/setting",
+        "pages/setting/user-info/user-info",
+        "pages/setting/security/security",
+        "pages/setting/change-password/change-password",
+        "pages/setting/affirm-password/affirm-password",
+        "pages/avatar-upload/avatar-upload",
+        "pages/login/login",
+        "pages/login/register/register",
+        "pages/login/forget/forget",
+        "pages/login/reset-password/reset-password",
+        "pages/login/inviteRegister/inviteRegister",
+        "pages/achievement/shopManagement/ShopManagement",
+        "pages/notification/notification",
+        "pages/notification/notification-details/notification-details",
+        "pages/components/select-bank/select-bank",
+        "pages/userAgreement/userAgreement",
+        "pages/partner-up/partner-up",
+        "pages/college/college",
+        "pages/college/college-details/college-details",
+        "pages/college/college-video-details/college-video-details",
+        "pages/college/college-image-text-details/college-image-text-details"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTitleText": "分销",
+        "navigationBarTextStyle": "black",
+        "backgroundColorBottom": "#ffffff"
+    },
+    "tabBar": {
+        "custom": true,
+        "backgroundColor": "#fff",
+        "color": "#999999",
+        "selectedColor": "#4B6AF9",
+        "borderStyle": "white",
+        "list": [
+            {
+                "selectedIconPath": "/image/shouye-active.png",
+                "iconPath": "/image/shouye.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "/image/yeji-active.png",
+                "iconPath": "/image/yeji.png",
+                "pagePath": "pages/achievement/achievement",
+                "text": "业绩"
+            },
+            {
+                "selectedIconPath": "/image/wode-active.png",
+                "iconPath": "/image/wode.png",
+                "pagePath": "pages/my/my",
+                "text": "我的"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

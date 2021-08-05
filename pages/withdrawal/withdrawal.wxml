@@ -1,0 +1,38 @@
+<view class="withdrawal">
+  <view class="apply">
+    <text class="amount">提现金额</text>
+    <view class="price">
+      <text>￥</text>
+      <input type="digit" value="{{number}}" disabled="disabled" placeholder="请输入提现金额" bindinput="bindKeyInput"></input>
+    </view>
+    <view class="cash">
+      <view class="number">
+        <text>可提现金额：</text>
+        <text class="money">￥ {{userInfo.balance}}</text>
+      </view>
+      <!-- <view class="whole" bindtap="setNumber">全部提现</view> -->
+    </view>
+  </view>
+  <view class="mode">
+    <text class="account">到账账户</text>
+    <view class="bankcard">
+      <image mode="widthFix" src="/image/yinhanagka.png"></image>
+      <text>银行卡</text>
+      <text>{{userInfo.accountBankNo}}</text>
+    </view>
+  </view>
+  <view class="determine {{!checked?'none-checked':'more-checked'}}" bindtap="submit">申请提现</view>
+  <view class="agree">
+  
+    <checkbox color="var(--themeColor)" bindtap="handleChangeGoods" data-checked="{{checked}}" checked="{{checked}}"></checkbox>
+   
+    <text>提现即表示同意</text>
+    <text class="explain">《智超商互通钱包协议》</text>
+  </view>
+  <view class="record">
+    <navigator url="./withdrawal-record/withdrawal-record">
+      <text>查看提现记录</text>
+      <image mode="widthFix" src="/image/xiangyou3.png"></image>
+    </navigator>
+  </view>
+</view>

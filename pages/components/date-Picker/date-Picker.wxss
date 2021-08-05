@@ -1,0 +1,23 @@
+/* pages/components/date-Picker/date-Picker.wxss */
+.input_base {
+  border: 2rpx solid #ccc;
+  font-size: 26px;
+}
+
+/* .input_h30 {
+  height: 30px;
+  line-height: 30px;
+} */
+
+.col-1 {
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+.weui-input{
+  font-size: 26rpx;
+  color: #333333;
+  text-align: center;
+}
+.placeholder{
+  text-align: center;
+}

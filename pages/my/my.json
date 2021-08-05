@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "Choose-identity":"../components/Choose-identity/Choose-identity",
+    "explain":"../components/explain/explain",
+    "modal":"../components/modal/modal"
+  }
+}

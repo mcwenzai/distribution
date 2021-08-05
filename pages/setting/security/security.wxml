@@ -1,0 +1,27 @@
+
+<view class="security">
+   <!-- <view class="cell cell-top" >
+      <view class="cell-left">我的联系人</view>
+      <view class="cell-right">
+        <view class="text">{{userInfo.userName}}</view>
+        <image src="../../../image/right.png"></image>
+      </view>
+   </view> -->
+   <view class="cell" >
+      <view class="cell-left">登录手机号</view>
+      <view class="cell-right phone">
+        <view class="text">{{userInfo.phone}}</view>
+        <image src="../../../image/right.png"></image>
+      </view>
+   </view>
+   <navigator url="../change-password/change-password" hover-class="none">
+      <view class="cell" >
+      <view class="cell-left">登录密码</view>
+      <view class="cell-right">
+        <view class="text password">修改密码</view>
+        <image src="../../../image/right.png"></image>
+      </view>
+   </view>
+   </navigator>
+   
+</view>

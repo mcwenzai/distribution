@@ -1,0 +1,95 @@
+.historical-earnings-container{
+  display: block;
+  min-height: 100vh;
+  background-color: #FBF9FD;
+}
+.header{
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.header .time{
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+}
+.header .time text{
+  display: block;
+  width: 14rpx;
+  height: 2rpx;
+  background: #999999;
+  margin: 0 15rpx;
+}
+.header .time input{
+  display: block;
+  width: 240rpx;
+  height: 60rpx;
+  background: #F6F6F6;
+  border-radius: 8rpx;
+  text-align: center;
+}
+.phcolor{
+  color: #CCCCCC;
+  font-size: 22rpx;
+}
+.header .btn{
+  width: 140rpx;
+  height: 52rpx;
+  background: var(--themeColor);
+  border-radius: 26px;
+  font-size: 22rpx;
+  line-height: 52rpx;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 30rpx;
+}
+.caption{
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  line-height: 88rpx;
+  padding-left: 20rpx;
+  color: #999999;
+  font-size: 28rpx;
+}
+.caption .line{
+  width: 8rpx;
+  height: 28rpx;
+  background: var(--themeColor);
+  border-radius: 4rpx;
+  margin-right: 10rpx;
+}
+
+.earnings-info{
+  width: 710rpx;
+  height: 224rpx;
+  box-sizing: border-box;
+  padding-left: 40rpx;
+  padding-top: 35rpx;
+  padding-bottom: 45rpx;
+  background: #FFFFFF;
+  border-radius: 12rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+.earnings-info>view{
+  display: flex;
+  color: #333333;
+  width: 100%;
+  font-size: 28rpx;
+}
+.earnings-info>view .money{
+  color: #666666;
+   font-weight: bold;
+  }
+.earnings-info>view .lable{
+  color: #333333;
+  margin-right: 35rpx;
+}
+.earnings-info>view .only-earnings{
+  color: #EF6D1F;
+}

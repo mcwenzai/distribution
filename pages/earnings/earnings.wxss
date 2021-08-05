@@ -1,0 +1,201 @@
+/* pages/earnings/earnings.wxss */
+.earnings-container{
+  background-color: #FBF9FD;
+  min-height: 100vh;
+}
+.header{
+  background-color: var(--themeColor);
+  width: 100%;
+  height: 200rpx;
+  color: #fff;
+}
+.tabs {
+  height: 88rpx;
+  display: flex;
+
+}
+.tabs .option {
+  height: 88rpx;
+  width: 50%;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  font-weight: bold;
+}
+.tabs .active {
+  position: relative;
+}
+.tabs .active::after {
+  width: 56rpx;
+  height: 8rpx;
+  content: '';
+  background: #FFFFFF;
+  border-radius: 4rpx;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -28rpx;
+}
+
+.money-total{
+  width: 710rpx;
+  height: 240rpx;
+  margin: 22rpx auto  0;
+  background: #ffffff; 
+  border-radius: 24rpx;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+.img-box{
+  display: flex;
+  justify-content: flex-end;
+}
+.money-total image{
+  display: block;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.money-total-title{
+  font-size: 28rpx;
+  color: #666666;
+  text-align: center;
+}
+.money-total-money{
+  font-size: 60rpx;
+  color: #EF6D1F;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 42rpx;
+}
+
+.month-income-details{
+  width: 710rpx;
+  margin: 20rpx auto 0;
+  
+}
+.details-title{
+  display: flex;
+  height: 68rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.details-title-left {
+  display: flex;
+  color: #333333;
+  align-items: center;
+  height: 68rpx;
+}
+.details-title-left .stick{
+  display: block;
+  width: 8rpx;
+  height: 28rpx;
+  background: var(--themeColor);
+  border-radius: 4rpx;
+ 
+}
+.details-title-left .text{
+    font-size: 28rpx;
+    line-height: 68rpx;
+    padding-left:10rpx;
+}
+.details-title-right {
+  display: flex;
+  color: #999999;
+  align-items: center;
+  height: 68rpx;
+  font-size: 24rpx;
+}
+
+
+/* 累计收益 */
+
+.accumulative .earnings{
+  width: 710rpx;
+  height: 100rpx;
+  background: #FFFFFF;
+  border-radius: 12rpx;
+  color: #333333;
+  margin: 20rpx auto 0;
+  display: flex;
+  justify-content: space-between;
+  line-height: 100rpx;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.earnings .money{
+  display: flex;
+}
+.earnings .money .unit{
+  color: #666666;
+}
+.earnings .money .num{
+  color: #EF6D1F;
+  padding-right: 28rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.histogram{
+  width: 710rpx;
+  background-color: #FFFFFF;
+  color: #333333;
+  font-size: 28rpx;
+  margin: 20rpx auto 0;
+  min-height: 444rpx;
+  border-radius: 12rpx;
+}
+.histogram-title{
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  height: 68rpx;
+}
+.histogram-title .line{
+  width: 8rpx;
+  height: 28rpx;
+  background: var(--themeColor);
+  border-radius: 4rpx;
+  margin-right: 10rpx;
+  line-height: 68rpx;
+}
+.histogram-title .text{
+  line-height: 68rpx;
+}
+
+.histogram-content{
+  height: 280rpx;
+  width: 640rpx;
+  margin: 0 auto;
+  border-bottom:2px solid #DDDDDD;
+  display: flex;
+  align-items: flex-end;
+}
+.arborescence-info{
+  width:14.2%;
+  text-align: center;
+  color: #EF6D1F;
+}
+.arborescence-info .num{
+  font-size: 20rpx;
+  font-weight: bold;
+  margin-bottom: 8rpx;
+}
+
+.arborescence-info .progress{
+  width: 35rpx;
+  height: 158rpx;
+  background: #7AB1FF;
+  margin: 0 auto;
+}
+.histogram-date{
+  width: 640rpx;
+  margin: 0 auto;
+  display: flex;
+  color: #666666;
+  font-size: 20rpx;
+}
+.histogram-date .arborescence-info{
+  color: #666;
+  margin-top: 14rpx;
+}

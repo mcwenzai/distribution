@@ -1,0 +1,23 @@
+<view wx:if="{{isShowSelect}}">
+  <view class="modal-mask"></view>
+  <view class="modal-dialog">
+    <view class="close" bindtap="close">
+      <image src="../../../image/guanbi.png"></image>
+    </view>
+    <view class="title">请选择代理的城市</view>
+    <view class="region">
+      <view class="region-tabs">
+        <view class="tab {{step==1 ? 'active' : ''}}" wx:if="{{step>0}}" bindtap="selectProvincial">{{provinceName ? provinceName : "请选择"}}</view>
+        <view class="tab {{step==2 ? 'active' : ''}}" wx:if="{{step>1}}" bindtap="selectCity">{{cityName ? cityName : "请选择"}}</view>
+        <view class="tab {{step==3 ? 'active' : ''}}" wx:if="{{step>2}}">请选择</view>
+      </view>
+      <scroll-view class="select-scroll" scroll-y="{{true}}" scroll-top="{{scrollTop}}">
+        <view wx:for="{{selectList}}"  wx:key="index"  class="select-line"  data-code="{{item.code}}" data-index="{{index}}" data-id="{{item.id}}" bindtap="selectOption">
+        <view>{{item.name}}</view>
+        <image  wx:if="{{selectCity.id == item.id && maxStep!=3}}" src="../../../image/tongyi.png"></image>
+        <image  wx:if="{{selectbusinessArea.code == item.code && maxStep==3}}" src="../../../image/tongyi.png"></image>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

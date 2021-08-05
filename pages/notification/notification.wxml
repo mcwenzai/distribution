@@ -1,0 +1,10 @@
+<!--pages/notification/notification.wxml-->
+<view class="notification">
+    <view class="content">
+        <view class="notification-item" wx:for="{{noticeList}}" bindtap="details" wx:key="index" data-id="{{item.id}}">
+            <view>{{item.noticeTitle}}</view>
+            <image src="../../image/right.png"></image>
+        </view>
+    </view>
+    <no-data show="{{noticeList.length<=0}}"></no-data>
+</view>

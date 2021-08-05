@@ -1,0 +1,32 @@
+<!--pages/setting/setting.wxml-->
+<view class="setting">
+  <navigator  hover-class="none" url="./user-info/user-info">
+    <view class="avatar">
+    <view class="avatar-left">
+
+      <image src="{{userInfo.avatar ? userInfo.avatar : '../../image/tx.png'}}" ></image>
+      <view class="name">{{userInfo.userName}}</view>
+    </view>
+    <image class="arrows" src="../../image/right.png"></image>
+  </view>
+  </navigator>
+  <navigator hover-class="none" url="./security/security">
+    <view class="cell">
+      <view class="lable">账号与安全</view>
+      <image class="arrows" src="../../image/right.png"></image>
+    </view>
+  </navigator>
+  <navigator hover-class="none">
+    <view class="cell">
+      <view class="lable">关于我们</view>
+      <image class="arrows" src="../../image/right.png"></image>
+    </view>
+  </navigator>
+  <view class="cell">
+    <view class="lable">当前版本</view>
+    <view class="right">v1.00</view>
+  </view>
+  <view class="logout" bindtap="logout">
+    退出登录
+  </view>
+</view>

@@ -1,0 +1,11 @@
+/* pages/components/verification-Code-Btn/verification-Code-Btn.wxss */
+.btn{
+  width: 160rpx;
+  height: 52rpx;
+  background: var(--themeColor);
+  border-radius: 26rpx;
+  font-size: 22rpx;
+  color: #fff;
+  line-height: 52rpx;
+  text-align: center;
+}

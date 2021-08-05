@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "earnings-details-list":"../../components/earnings-Details-List/earnings-Details-List",
+    "no-data":"../../components/no-Data/no-Data"
+  },
+  "navigationBarTitleText": "历史数据"
+}

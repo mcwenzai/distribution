@@ -1,0 +1,37 @@
+<view class="historical-earnings-container">
+  <view class="header">
+    <view class="time">
+      <picker mode="date" class="price" value="{{startTime}}" bindchange="changeStartTime">
+        <input disabled="disabled" value="{{startTime}}" placeholder="开始时间" placeholder-class="phcolor"></input>
+      </picker>
+      <text></text>
+      <picker mode="date" class="price" value="{{endTime}}" bindchange="changeEndTime">
+        <input disabled="disabled" value="{{endTime}}" placeholder="结束时间" placeholder-class="phcolor"></input>
+      </picker>
+    </view>
+    <view class="btn" bindtap="search">自定义查询</view>
+  </view>
+  <view class="caption" wx:if="{{isSearch}}">
+     <view class="line"></view>
+     <view class="text">收益明细：{{startTime}} - {{endTime}}</view>
+  </view>
+  <view class="earnings-info" wx:if="{{isSearch}}">
+     <view>
+       <view class="lable">收益总额：</view>
+       <view class="money">￥{{totalAmount == null ? 0 : totalAmount}}</view>
+     </view>
+     <view>
+       <view class="lable">退款收益：</view>
+       <view class="money">￥{{returnAmount == null ? 0 : returnAmount}}</view>
+     </view>
+     <view>
+       <view class="lable">净利收益：</view>
+       <view class="money only-earnings">￥{{incomeAmount == null ? 0 : incomeAmount}}</view>
+     </view>
+  </view>
+  <block wx:if="{{isSearch}}">
+    <earnings-details-list list="{{list}}"></earnings-details-list>
+  </block>
+  <no-data show="{{list.length<=0}}"></no-data>
+  
+</view>

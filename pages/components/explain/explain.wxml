@@ -1,0 +1,44 @@
+<view wx:if="{{flag}}">
+  <view class="modal-mask"></view>
+  <view class="modal-dialog">
+    <view class="img"  bindtap="onCancel">
+      <image mode="widthFix" src="/image/guanbi.png"></image>
+    </view>
+    <block wx:if="{{myValue==2}}">
+      <view class="modal-title">设置商圈说明</view>
+    <view class="modal-content">
+     <view class="tex">
+       <text class="crity">“设置商圈”</text>
+       <text>是指您所代理的城市下的所有街道(镇)划分为多个商圈；一个商圈下面可以设置多个街道。</text>
+     </view>
+     <view class="tex">
+       <text class="name">如何操作：</text>
+       <text class="crity">(以代理长沙市为例)</text>
+     </view>
+     <view class="tex">
+      当选择“梅溪湖街道、岳麓街道”为一个商圈，并设置商圈名为A商圈；
+     </view>
+     <view class="tex">
+       <view class="name">如下图所示：</view>
+       <image mode="widthFix" class="demonstration" src="/image/yanshi.png"></image>
+     </view>
+     <view class="tex">
+      设置商圈保存后，再次设置的商圈中包含的街道将不再显示！
+     </view>
+    </view>
+    </block>
+    <block wx:if="{{myValue==1}}">
+      <image mode="widthFix" class="codeed" src="{{wxCode}}"></image>
+      <view class="full-name">{{name}}</view>
+      <view class="code">
+        <text>邀请码：</text>
+        <text>{{phone}}</text>
+      </view>
+      <view class="button">
+        <view class="preservation" bindtap="saveInLocal">保存图片</view>
+        <!-- <view class="share">分享到微信</view> -->
+        <button  class="share" open-type="share">分享到微信</button>
+      </view>
+    </block>
+  </view>
+</view>

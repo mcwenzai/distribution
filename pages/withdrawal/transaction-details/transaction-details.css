@@ -1,0 +1,59 @@
+page {
+  min-height: 100%;
+  background: #FBF9FD;
+}
+.details {
+  width: 100%;
+}
+.details .information {
+  width: 710rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  margin: 20rpx 20rpx 0;
+  padding-bottom: 40rpx;
+}
+.details .information .money {
+  padding-top: 40rpx;
+  margin: 0 27rpx;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.details .information .money text {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+}
+.details .information .status {
+  margin: 28rpx 27rpx 0;
+  border-bottom: 2rpx solid #EEE;
+  padding-bottom: 20rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #24B512;
+}
+.details .information .active {
+  color: var(--themeColor);
+}
+.details .information .err {
+  color: #F94B4B;
+}
+.details .information .account {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 30rpx 27rpx 0;
+  font-size: 26rpx;
+  font-weight: 500;
+}
+.details .information .account .time {
+  color: #666;
+}
+.details .information .account .number {
+  width: 443rpx;
+  color: #333;
+}
+.details .information .account .fail {
+  width: 443rpx;
+  color: #F94B4B;
+}

@@ -1,0 +1,31 @@
+<view class="details">
+  <view class="information">
+    <view class="money">
+      <text>提现-银行卡</text>
+      <text>{{details.money}}元</text>
+    </view>
+    <view class="status" wx:if="{{details.status==1}}">提现成功</view>
+    <view class="status active" wx:if="{{details.status==0}}">处理中</view>
+    <view class="status err" wx:if="{{details.status==2}}">交易失败，已返还</view>
+    <view class="account">
+      <text class="time">提现至银行卡</text>
+      <text class="number">{{details.bankNum}}</text>
+    </view>
+    <view class="account">
+      <text class="time">创建时间</text>
+      <text class="number">{{details.createTime}}</text>
+    </view>
+    <view class="account" wx:if="{{details.arriveTime && details.status==1}}">
+      <text class="time">到账时间</text>
+      <text class="number">{{details.arriveTime}}</text>
+    </view>
+    <view class="account">
+      <text class="time">提现单号</text>
+      <text class="number">{{details.billId}}</text>
+    </view>
+    <view class="account" wx:if="{{details.status==2}}">
+      <text class="time">失败原因</text>
+      <text class="fail">{{reason}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,156 @@
+{
+   "description": "项目配置文件",
+   "packOptions": {
+      "ignore": []
+   },
+   "setting": {
+      "urlCheck": true,
+      "es6": true,
+      "enhance": true,
+      "postcss": true,
+      "preloadBackgroundData": false,
+      "minified": true,
+      "newFeature": false,
+      "coverView": true,
+      "nodeModules": false,
+      "autoAudits": false,
+      "showShadowRootInWxmlPanel": true,
+      "scopeDataCheck": false,
+      "uglifyFileName": false,
+      "checkInvalidKey": true,
+      "checkSiteMap": true,
+      "uploadWithSourceMap": true,
+      "compileHotReLoad": false,
+      "useMultiFrameRuntime": true,
+      "useApiHook": true,
+      "useApiHostProcess": true,
+      "babelSetting": {
+         "ignore": [],
+         "disablePlugins": [],
+         "outputPath": ""
+      },
+      "bundle": false,
+      "useIsolateContext": true,
+      "useCompilerModule": true,
+      "userConfirmedUseCompilerModuleSwitch": false,
+      "userConfirmedBundleSwitch": false,
+      "packNpmManually": false,
+      "packNpmRelationList": [],
+      "minifyWXSS": true
+   },
+   "compileType": "miniprogram",
+   "libVersion": "2.14.4",
+   "appid": "wx03ceb4da9e3bfc11",
+   "projectname": "%E5%88%86%E9%94%80",
+   "debugOptions": {
+      "hidedInDevtools": []
+   },
+   "scripts": {},
+   "isGameTourist": false,
+   "simulatorType": "wechat",
+   "simulatorPluginLibVersion": {},
+   "condition": {
+      "plugin": {
+         "list": []
+      },
+      "game": {
+         "list": []
+      },
+      "gamePlugin": {
+         "list": []
+      },
+      "miniprogram": {
+         "list": [
+            {
+               "name": "pages/my/my",
+               "pathName": "pages/my/my",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/wallet/wallet",
+               "pathName": "pages/wallet/wallet",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/received/received",
+               "pathName": "pages/received/received",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/withdrawal/withdrawal",
+               "pathName": "pages/withdrawal/withdrawal",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/withdrawal/withdrawal-record/withdrawal-record",
+               "pathName": "pages/withdrawal/withdrawal-record/withdrawal-record",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/withdrawal/transaction-details/transaction-details",
+               "pathName": "pages/withdrawal/transaction-details/transaction-details",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/order-details/order-details",
+               "pathName": "pages/order-details/order-details",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/index/index",
+               "pathName": "pages/index/index",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/achievement/achievement",
+               "pathName": "pages/achievement/achievement",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/verification/verification",
+               "pathName": "pages/verification/verification",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/verification/payment/payment",
+               "pathName": "pages/verification/payment/payment",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/notice/notice",
+               "pathName": "pages/notice/notice",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/business-district/business-district",
+               "pathName": "pages/business-district/business-district",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/business-district/business/business",
+               "pathName": "pages/business-district/business/business",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "pages/handle/handle",
+               "pathName": "pages/handle/handle",
+               "scene": null
+            }
+         ]
+      }
+   }
+}

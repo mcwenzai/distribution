@@ -1,0 +1,32 @@
+.notification {
+    min-height: 100vh;
+    background: #F9F9F9;
+    .content{
+        overflow: hidden;
+        .notification-item{
+            display: flex;
+            padding:0 20rpx ;
+            height: 100rpx;
+            background: #fff;
+            margin: 20rpx auto 0 ;  
+            width: 710rpx;
+            box-sizing: border-box;
+            color: #333333;
+            font-size: 28rpx;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 12rpx;
+            view{
+                overflow:hidden;
+                white-space:nowrap;
+                text-overflow:ellipsis;
+                padding-right: 30rpx;
+            }
+            image{
+                display: block;
+                width: 14rpx;
+                height: 24rpx;
+            }
+        }
+    }
+}

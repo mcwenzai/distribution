@@ -1,0 +1,294 @@
+page{
+  min-height: 100%;
+  background: #FBF9FD;
+}
+.personal{
+  width: 100%;
+  position: relative;
+  .userInfo{
+    width: 100%;
+    height: 221rpx;
+    background:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .img{
+      width: 120rpx;
+      height: 120rpx;
+      border-radius: 50%;
+      border: 2rpx solid #EEEEEE;
+      margin-left: 24rpx;
+      image{
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+    .user{
+      flex: 4;
+      margin-left: 20rpx;
+      .user-image{
+        display: flex;
+        justify-content: content;
+        align-content: center;
+        .user-name{
+          font-size: 28rpx;
+          font-weight: bold;
+          color: #333;
+        }
+        image{
+          margin-left: 20rpx;
+          height: 39rpx;
+        }
+  
+      }
+      .phone{
+        font-size: 22rpx;
+        font-weight: 500;
+        color: #999;
+        margin-top: 19rpx;
+      }
+      .code{
+        text{
+          font-size: 22rpx;
+          font-weight: 500;
+          color: #999;
+        }
+        .copy{
+          width: 19rpx;
+          height: 19rpx;
+          margin-left: 12rpx;
+          padding-top: 2rpx;
+        }
+      }
+    }
+    .verify{
+      .authentication{
+        width: 200rpx;
+        height: 64rpx;
+        background: #434343;
+        box-shadow: 0rpx 4rpx 5rpx 0rpx rgba(0, 66, 216, 0.19);
+        border-radius: 32rpx 0rpx 0rpx 32rpx;
+        .certification{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top:14rpx;
+          .complete{
+            width: 28rpx;
+            height: 35rpx;
+          }
+          .name{
+            font-size: 24rpx;
+            font-weight: bold;
+            color: #FFC490;
+            margin-left: 11rpx;
+          }
+        }
+      }
+      .qrcode{
+        width: 140rpx;
+        height: 48rpx;
+        line-height:48rpx;
+        background-color: #F8E2E7;
+        border-radius: 24rpx;
+        margin-top: 20rpx;
+        margin-left: 45rpx;
+        .code{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .invitation{
+            width: 24rpx;
+            height: 24rpx;
+          }
+          text{
+            font-size: 22rpx;
+            font-weight: 500;
+            color: var(--themeColor);
+            margin-left: 12rpx;
+          }
+        }
+        #expla{
+          position: fixed;
+          top: 232rpx;
+          left:95rpx;
+          z-index: 3;
+        }
+      }
+    }
+  }
+  .up{
+    display: flex;
+    width: 702rpx;
+    height: 84rpx;
+    background: #FFFFFF;
+    border-radius: 24rpx;
+    margin: 28rpx auto ;
+    justify-content: space-between;
+   padding: 0 20rpx 0 30rpx;
+   align-items: center;
+   box-sizing: border-box;
+    .vip{
+      width: 50rpx;
+      height: 46rpx;
+    
+    }
+    text{
+      flex: 1;
+      padding-left: 28rpx;
+      font-size: 26rpx;
+      color: #333333;
+      font-weight: bold;
+    }
+    .right{
+      width: 10rpx;
+      height: 18rpx;
+    }
+  }
+  .money{
+    width: 702rpx;
+    height: 182rpx;
+    border-radius: 12rpx;
+    margin: 10rpx 26rpx 0;
+    position: relative;
+    border-radius: 10rpx;
+    overflow: hidden;
+    >image{
+      position: absolute;
+      width: 702rpx;
+     height: 182rpx;
+     left: 0;
+     top: 0;
+     z-index: 1;
+    }
+    navigator{
+      display: flex;
+      justify-content: space-between;
+      width: 702rpx;
+      height: 182rpx;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      .balance{
+        display: flex;
+        flex-direction:column;
+        align-content: center;
+        margin-top: 30rpx;
+        margin-left: 40rpx;
+        text{
+          font-size: 28rpx;
+          font-weight: bold;
+          color: #280500;
+        }
+        .number{
+          font-size: 48rpx;
+          margin-top: 31rpx;
+        }
+      }
+      .withdrawal{
+        margin-top: 60rpx;
+        margin-right: 50rpx;
+        text{
+          font-size: 24rpx;
+          font-weight: bold;
+          color: #280500;
+        }
+        image{
+          width: 10rpx;
+          height: 18rpx;
+          margin-left: 11rpx;
+        }
+      }
+    }
+    
+  }
+  .daily{
+    width: 702rpx;
+    height: 84rpx;
+    line-height:84rpx;
+    background: #FFFFFF;
+    border-radius: 24rpx;
+    margin: 28rpx 26rpx 0; 
+    navigator{
+      display: flex;
+      justify-content: space-between;
+      align-content: space-between;
+      .daily-goods{
+        display: flex;
+        .district{
+          width: 46rpx;
+          height: 44rpx;
+          margin-top: 20rpx;
+          margin-left: 51rpx;
+        }
+        text{
+          font-size: 26rpx;
+          font-weight: bold;
+          color: #000;
+          margin-left: 34rpx;
+        }
+      }
+      .goods{
+        margin-right: 52rpx;
+        text{
+          font-size: 24rpx;
+          font-weight: bold;
+          color: #999;
+          margin-right: 10rpx;
+        }
+        image{
+          width: 10rpx;
+          height: 18rpx;
+        }
+      }
+    }
+  }
+  .tool{
+    width: 702rpx;
+    height: 227rpx;
+    background: #FFFFFF;
+    border-radius: 12rpx;
+    margin: 28rpx 26rpx 0;
+    .used{
+      font-size: 28rpx;
+      font-weight: bold;
+      color: #333;
+      padding-top: 28rpx;
+      margin-left:29rpx
+    }
+    .see{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10rpx;
+      .item-main{
+        width: 25%;
+        navigator{
+          display: flex;
+          width: 100%;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding-top: 25rpx;
+          padding-bottom: 25rpx;
+          align-items: flex-end;
+          image{
+            width: 60rpx;
+            height: 42rpx !important;
+            flex-shrink: 0;
+          }
+          text{
+            font-size: 26rpx;
+            font-weight: 500;
+            color: #333;
+            margin-top: 22rpx;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

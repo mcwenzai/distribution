@@ -1,0 +1,14 @@
+<view wx:if="{{flag}}">
+  <view class="modal-mask"></view>
+  <view class="modal-dialog">
+    <view class="title">温馨提示</view>
+    <view class="prompt">
+      <text>您确定要删除该商圈吗？</text>
+      <text>删除后，旗下的街道将需要重新设置商圈。</text>
+    </view>
+    <view class="option">
+      <view class="delete" bindtap="onDelete">删除</view>
+      <view class="cancel" bindtap="onConfir">取消</view>
+    </view>
+  </view>
+</view>

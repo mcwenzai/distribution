@@ -1,0 +1,22 @@
+<view class="login">
+  <view class="logo">
+    <image src="../../../image/logo01.png" class="logo-one"></image>
+    <image src="../../../image/logo02.png" class="logo-two"></image>
+  </view>
+ <view class="content">
+   <view class="title">请确认您的邀请人</view>
+   <view class="avatar">
+    <image class="avatar" src="../../../image/tx.png"></image>
+   </view>
+   <!-- <view class="name">{{name}}</view> -->
+   <view class="name">{{name}}</view>
+    <view class="want">{{phone}}</view>
+    <view class="next-btn" bindtap="next">下一步</view>
+    <view class="tips">
+      <image src="../../../image/yiwen-red.png"></image>
+      <text>请确认您的邀请人，注册后不可以更改哦~</text>
+    </view>
+    <view class="have" bindtap="goLogin">已有账号，直接登录</view>
+ </view>
+  
+</view>

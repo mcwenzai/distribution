@@ -1,0 +1,28 @@
+<!--pages/components/earnings-Details-List/earnings-Details-List.wxml-->
+<view>
+  <view class="details-content" wx:for="{{list}}" wx:key='index'>
+    <view class="details-content-msg" bindtap="showDetails" data-index="{{index}}">
+      <view class="date">{{item.createTime}}</view>
+      <view class="msg-right">
+        <view class="money">+ {{item.arrivalAmount}}元</view>
+        <image class="down" src="../../../image/xiangshang.png" wx:if="{{!item.isHidden}}"></image>
+        <image class="down" src="../../../image/xiangxia.png" wx:if="{{item.isHidden}}"></image>
+      </view>
+    </view>
+    <view class="details-content-info {{!item.isHidden ? 'hidden' : ''}}" wx:for="{{item.fundDetailVoList}}" wx:for-item="value" wx:key='index' >
+      <view class="info">
+        <view class="info-line-one">
+          <view class="info-line-one-block">
+            <view class="time">{{value.createTime}}</view>
+            <view class="type">{{value.type ==1 ? "厂商" : "商户"}}-{{value.source ==1 ? "交易订单" : "推荐费"}}</view>
+          </view>
+          <view class="money">{{value.arrivalAmount}}元</view>
+        </view>
+        <view class="info-line-two">
+          <view class="number">{{value.source ==1 ? "订单编号" : "流水号"}}：{{value.source ==1 ? value.orderNo : value.fundId}}</view>
+          <view class="state" wx:if="{{value.status==101}}">退款中</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "设置商圈",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "component": true,
+  "usingComponents": {
+    "explain":"../components/explain/explain",
+    "delete-prompt":"../components/delete-prompt/delete-prompt",
+    "no-data":"../components/no-Data/no-Data"
+  }
+}

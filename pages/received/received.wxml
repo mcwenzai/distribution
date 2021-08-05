@@ -1,0 +1,21 @@
+<view class="received">
+  <view class="received-order">
+   <view class="name">
+    <text>厂商-入住服务费</text>
+    <text>{{status!==3?'+':'-'}} 2000元</text>
+   </view>
+   <view class="number">
+      <text>订单编号：</text>
+      <text>78590349850568979</text>
+   </view>
+   <view class="time">
+    <view class="payment">
+      <text>支付时间：</text>
+      <text>2020-01-20 12:24:36</text>
+    </view>
+    <!-- <text class="status">已完成</text> -->
+    <!-- <text class="refund">已退款</text> -->
+    <text class="deliver">待发货</text>
+   </view>
+  </view>
+</view>

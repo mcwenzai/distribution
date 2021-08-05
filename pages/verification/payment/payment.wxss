@@ -1,0 +1,101 @@
+page {
+  min-height: 100%;
+  background: #FBF9FD;
+}
+.payment {
+  width: 100%;
+}
+.payment .information {
+  width: 710rpx;
+  height: 564rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  margin: 20rpx 20rpx 0;
+}
+.payment .information .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60rpx;
+}
+.payment .information .price text {
+  font-size: 40rpx;
+  font-weight: 800;
+  color: var(--themeColor);
+}
+.payment .information .price .number {
+  font-size: 70rpx;
+}
+.payment .information .cost {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #999;
+}
+.payment .information .money {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 50rpx 20rpx 0;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+}
+.payment .information .order-number {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 20rpx 20rpx 0;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+}
+.payment .information .method {
+  margin: 37rpx 20rpx 0;
+  border-top: 2rpx solid #F6F6F6;
+  padding-top: 30rpx;
+}
+.payment .information .method .payment-method {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+}
+.payment .information .method .choice {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 30rpx;
+}
+.payment .information .method .choice .wechat {
+  display: flex;
+  align-items: center;
+}
+.payment .information .method .choice .wechat image {
+  width: 61rpx;
+  height: 61rpx;
+}
+.payment .information .method .choice .wechat text {
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #333;
+  margin-left: 30rpx;
+}
+.payment .confirm {
+  width: 640rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  margin: 80rpx 55rpx 0;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #FBF9FD;
+}
+.payment .more-checked {
+  background: var(--themeColor);
+}
+.payment .none-checked {
+  background: #ccc;
+}

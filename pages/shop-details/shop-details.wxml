@@ -1,0 +1,75 @@
+<view class="details">
+  <view class="mansgement">
+    <view class="bar {{checked?'active':''}}" data-index="0" bindtap="agentTap">
+      <view class="navigation">入驻/入网状态</view>
+    </view>
+    <view class="bar {{!checked?'active':''}}" data-index="1" bindtap="agentTap">
+      <view class="navigation">店铺明细</view>
+    </view>
+  </view>
+  <block wx:if="{{checked}}">
+    <view class="detailed">
+      <view class="see">
+        <view class="account">
+          <text class="account-status">入驻/入网状态：</text>
+          <view class="state-bar" bindtap="Change">
+            <text class="state" wx:if="{{statusName==''}}">全部</text>
+            <text class="state" wx:if="{{statusName!==''}}">{{statusName}}</text>
+            <image mode="widthFix" src="{{status?'/image/xiala33.png':'/image/xiala3.png'}}"></image>
+          </view>
+          <view class="status" wx:if="{{status}}">
+            <view class="name {{item.checkeds?'change':''}}" wx:for="{{state}}" data-ban="{{item.ban}}"
+              data-index="{{index}}" data-id="{{item.id}}" wx:key="id" bindtap="Checkeds">{{item.status}}</view>
+          </view>
+        </view>
+      </view>
+     
+      <view class="exhibition">
+        <view class="catalog colour">
+          <text>店铺名称</text>
+          <text>店铺类型</text>
+          <text>联系电话</text>
+          <text>入驻/入网状态</text>
+        </view>
+        <no-data show="{{merchantStatusList.length<=0}}"></no-data>
+        <view class="catalog information" wx:for="{{merchantStatusList}}" wx:key="index" data-id="{{item.id}}">
+          <text class="nae">{{item.storeName}}</text>
+          <text class="nae">{{item.type==2 ? "商户" : "厂商"}}</text>
+          <text class="nae">{{item.contactPhone ? item.contactPhone : ' ' }}</text>
+          <text class="nae" wx:if="{{item.merchantApiStatus == 0 || item.merchantApiStatus == null}}">未入驻</text>
+          <text class="nae" wx:if="{{item.merchantApiStatus == 1}}">入驻审核中</text>
+          <text class="nae" wx:if="{{item.merchantApiStatus == 2}}">入驻成功</text>
+          <text class="nae" wx:if="{{item.merchantApiStatus == 3}}">入驻失败</text>
+          <text class="nae" wx:if="{{item.merchantApiStatus == 'REVIEWING'}}">入网审核中</text>
+          <text class="nae" wx:if="{{item.merchantApiStatus == 'REVIEW_BACK' || item.merchantApiStatus == 'NIG00002'}}">入网失败</text>
+          <text class="nae" wx:if="{{item.merchantApiStatus == 'COMPLETED'}}">入网成功</text>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:if="{{!checked}}">
+    <view class="searchs">
+      <view class="input-box">
+        <image mode="widthFix" src="/image/sousuo.png"></image>
+        <input type="text" value="{{companyName}}" placeholder="搜索商圈代理" placeholder-class="kanst"
+          bindinput="searchNameInput"></input>
+      </view>
+      <view class="btn" bindtap="search"> 搜索</view>
+    </view>
+    <view class="contents color">
+      <text>店铺名称</text>
+      <text>店铺类型</text>
+      <text>联系人电话</text>
+      <text>账号状态</text>
+    </view>
+    <no-data show="{{merchantList<=0}}"></no-data>
+    <view class="contents situation" wx:for="{{merchantList}}" wx:key="index">
+      <text class="name">{{item.companyName}}</text>
+      <text class="name">{{item.type==1? "厂商" : '商户'}}</text>
+      <text class="name">{{item.storePhone}}</text>
+      <text class="name status" wx:if="{{item.ban==0}}">正常</text>
+      <text class="name status" wx:if="{{item.ban==1}}">冻结</text>
+      <text class="name status" wx:if="{{item.ban==2}}">断约</text>
+    </view>
+  </block>
+</view>

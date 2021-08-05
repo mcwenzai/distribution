@@ -1,0 +1,8 @@
+<!--pages/college/college-image-text-details/college-image-text-details.wxml-->
+<view class="college-image-text-details">
+    <view class="interval"></view>
+    <view class="title">{{details.title}}</view>
+    <view class="content">
+        <rich-text nodes="{{details.introduce}}"></rich-text>
+    </view>
+</view>

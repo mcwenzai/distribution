@@ -1,0 +1,287 @@
+page {
+  min-height: 100%;
+  background: #FBF9FD;
+}
+.personal {
+  width: 100%;
+  position: relative;
+}
+.personal .userInfo {
+  width: 100%;
+  height: 221rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personal .userInfo .img {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 2rpx solid #EEEEEE;
+  margin-left: 24rpx;
+}
+.personal .userInfo .img image {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.personal .userInfo .user {
+  flex: 4;
+  margin-left: 20rpx;
+}
+.personal .userInfo .user .user-image {
+  display: flex;
+  justify-content: content;
+  align-content: center;
+}
+.personal .userInfo .user .user-image .user-name {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+}
+.personal .userInfo .user .user-image image {
+  margin-left: 20rpx;
+  height: 39rpx;
+}
+.personal .userInfo .user .phone {
+  font-size: 22rpx;
+  font-weight: 500;
+  color: #999;
+  margin-top: 19rpx;
+}
+.personal .userInfo .user .code text {
+  font-size: 22rpx;
+  font-weight: 500;
+  color: #999;
+}
+.personal .userInfo .user .code .copy {
+  width: 19rpx;
+  height: 19rpx;
+  margin-left: 12rpx;
+  padding-top: 2rpx;
+}
+.personal .userInfo .verify .authentication {
+  width: 200rpx;
+  height: 64rpx;
+  background: #434343;
+  box-shadow: 0rpx 4rpx 5rpx 0rpx rgba(0, 66, 216, 0.19);
+  border-radius: 32rpx 0rpx 0rpx 32rpx;
+}
+.personal .userInfo .verify .authentication .certification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 14rpx;
+}
+.personal .userInfo .verify .authentication .certification .complete {
+  width: 28rpx;
+  height: 35rpx;
+}
+.personal .userInfo .verify .authentication .certification .name {
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #FFC490;
+  margin-left: 11rpx;
+}
+.personal .userInfo .verify .qrcode {
+  width: 140rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  background-color: #F8E2E7;
+  border-radius: 24rpx;
+  margin-top: 20rpx;
+  margin-left: 45rpx;
+}
+.personal .userInfo .verify .qrcode .code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personal .userInfo .verify .qrcode .code .invitation {
+  width: 24rpx;
+  height: 24rpx;
+}
+.personal .userInfo .verify .qrcode .code text {
+  font-size: 22rpx;
+  font-weight: 500;
+  color: var(--themeColor);
+  margin-left: 12rpx;
+}
+.personal .userInfo .verify .qrcode #expla {
+  position: fixed;
+  top: 232rpx;
+  left: 95rpx;
+  z-index: 3;
+}
+.personal .up {
+  display: flex;
+  width: 702rpx;
+  height: 84rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  margin: 28rpx auto ;
+  justify-content: space-between;
+  padding: 0 20rpx 0 30rpx;
+  align-items: center;
+  box-sizing: border-box;
+}
+.personal .up .vip {
+  width: 50rpx;
+  height: 46rpx;
+}
+.personal .up text {
+  flex: 1;
+  padding-left: 28rpx;
+  font-size: 26rpx;
+  color: #333333;
+  font-weight: bold;
+}
+.personal .up .right {
+  width: 10rpx;
+  height: 18rpx;
+}
+.personal .money {
+  width: 702rpx;
+  height: 182rpx;
+  border-radius: 12rpx;
+  margin: 10rpx 26rpx 0;
+  position: relative;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.personal .money > image {
+  position: absolute;
+  width: 702rpx;
+  height: 182rpx;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.personal .money navigator {
+  display: flex;
+  justify-content: space-between;
+  width: 702rpx;
+  height: 182rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.personal .money navigator .balance {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}
+.personal .money navigator .balance text {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #280500;
+}
+.personal .money navigator .balance .number {
+  font-size: 48rpx;
+  margin-top: 31rpx;
+}
+.personal .money navigator .withdrawal {
+  margin-top: 60rpx;
+  margin-right: 50rpx;
+}
+.personal .money navigator .withdrawal text {
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #280500;
+}
+.personal .money navigator .withdrawal image {
+  width: 10rpx;
+  height: 18rpx;
+  margin-left: 11rpx;
+}
+.personal .daily {
+  width: 702rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  margin: 28rpx 26rpx 0;
+}
+.personal .daily navigator {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.personal .daily navigator .daily-goods {
+  display: flex;
+}
+.personal .daily navigator .daily-goods .district {
+  width: 46rpx;
+  height: 44rpx;
+  margin-top: 20rpx;
+  margin-left: 51rpx;
+}
+.personal .daily navigator .daily-goods text {
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #000;
+  margin-left: 34rpx;
+}
+.personal .daily navigator .goods {
+  margin-right: 52rpx;
+}
+.personal .daily navigator .goods text {
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #999;
+  margin-right: 10rpx;
+}
+.personal .daily navigator .goods image {
+  width: 10rpx;
+  height: 18rpx;
+}
+.personal .tool {
+  width: 702rpx;
+  height: 227rpx;
+  background: #FFFFFF;
+  border-radius: 12rpx;
+  margin: 28rpx 26rpx 0;
+}
+.personal .tool .used {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  padding-top: 28rpx;
+  margin-left: 29rpx;
+}
+.personal .tool .see {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10rpx;
+}
+.personal .tool .see .item-main {
+  width: 25%;
+}
+.personal .tool .see .item-main navigator {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  align-items: flex-end;
+}
+.personal .tool .see .item-main navigator image {
+  width: 60rpx;
+  height: 42rpx !important;
+  flex-shrink: 0;
+}
+.personal .tool .see .item-main navigator text {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #333;
+  margin-top: 22rpx;
+  width: 100%;
+  text-align: center;
+}

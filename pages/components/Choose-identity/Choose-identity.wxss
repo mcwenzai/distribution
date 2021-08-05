@@ -1,0 +1,93 @@
+.modal-mask {
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.4;
+  overflow: hidden;
+  z-index: 9000;
+}
+.selection {
+  width: 560rpx;
+  padding-bottom: 40rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  z-index: 9999;
+  position: relative;
+  box-sizing: border-box;
+}
+.selection .img {
+  width: 60rpx;
+  height: 40rpx;
+  background: #F5F5F5;
+  border-radius: 0rpx 20rpx 0rpx 20rpx;
+  /* float: right; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.selection .img image {
+  width: 18rpx;
+  height: 18rpx;
+  display: block;
+}
+.selection .identity {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #000;
+  padding-top: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selection .choose {
+  width: 480rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  background: #F6F6F6;
+  border-radius: 8rpx;
+  margin-top: 28rpx;
+  margin-left: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border: 2rpx solid #fff;
+}
+.selection .choose .agent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32rpx;
+}
+.selection .choose .agent image {
+  height: 56rpx;
+}
+.selection .choose .agent text {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #000;
+  margin-left: 40rpx;
+}
+.selection .choose checkbox-group {
+  margin-right: 32rpx;
+}
+.selection .checkeds {
+  border: 2rpx solid var(--themeColor);
+}
+.selection .determine {
+  width: 320rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+  background: var(--themeColor);
+  border-radius: 34rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #fff;
+  margin: 40rpx 120rpx 0;
+}

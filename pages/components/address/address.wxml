@@ -1,0 +1,22 @@
+<view wx:if="{{flag}}">
+  <view class="modal-mask"></view>
+  <view class="modal-dialog">
+    <view class="title">请设置商圈</view>
+    <scroll-view scroll-y="true" class="area-scroll">
+      <view class="region" wx:for="{{list}}" wx:key="index" wx:for-index="idx">
+        <view class="area" bindtap="elliPsis" data-index="{{idx}}">
+          <text>{{item.districtName}}</text>
+          <image mode="widthFix" src="{{selectList[idx].open?'/image/xiangxia.png':'/image/xiangshang.png'}}"></image>
+        </view>
+        <view class="street" data-index="{{i}}" data-upindex="{{idx}}" bindtap="selectStreet"  data-townCode="{{value.townCode}}"  data-townName="{{value.townName}}" wx:if="{{selectList[idx].open}}"  wx:for="{{item.townList}}" wx:key="i"  wx:for-index="i" wx:for-item="value">
+          <text>- {{value.townName}}</text>
+          <checkbox checked="{{selectList[idx].check[i]}}" color="var(--themeColor)" ></checkbox>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="option">
+      <view class="cancel" bindtap="onCancel">取消</view>
+      <view class="preservation" bindtap='onConfirm'>保存</view>
+    </view>
+  </view>
+</view>

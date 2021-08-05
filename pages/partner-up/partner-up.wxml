@@ -1,0 +1,26 @@
+<!--pages/partner-up/partner-up.wxml-->
+<view class="partner-up">
+    <view >
+        <image class="banner" src="../../image/up_banner.png"></image>
+    <view class="interests">
+        <view class="title">专属权益</view>
+        <view class="icons">
+            <view class="icon">
+                <image src="../../image/up_icon_01.png"></image>
+                <text>推荐合伙人</text>
+            </view>
+            <view class="icon">
+                <image src="../../image/up_icon_02.png"></image>
+                <text>分润机制</text>
+            </view>
+            <view class="icon">
+                <image src="../../image/up_icon_03.png"></image>
+                <text>渠道资源</text>
+            </view>
+        </view>
+    </view>
+    </view>
+    <view class="up-btn" bindtap="submit">
+        申请成为超级合伙人
+    </view>
+</view>

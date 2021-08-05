@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "身份认证",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "upload-Identity":"../components/upload-Identity/upload-Identity"
+  }
+}

@@ -1,0 +1,89 @@
+<view class="upload">
+  <form action="">
+    <view class="laobe">
+      <text class="required">*</text>
+      <text class="id">上传本人身份证：</text>
+    </view>
+    <view class="picture" wx:for="{{Identity}}" wx:key="index">
+      <view class="noodles">
+        <text class="name">{{item.name}}</text>
+        <text>{{item.noodles}}</text>
+      </view>
+      <view class="img" bindtap="updateIdCard" data-index="{{index}}">
+        <image mode="aspectFit" src="{{item.imageUrl}}"></image>
+      </view>
+    </view>
+    <view class="real-name">
+      <view class="lable">
+        <text class="required">*</text>
+        <text class="id">真实姓名：</text>
+      </view>
+      <input  class="name-input"  maxlength="6" type="text" bindinput="nameInput" placeholder="请输入您的真实姓名" placeholder-style="font-size:24rpx;color:#DDDDDD;"></input>
+    </view>
+    <view class="bank-card bank-card-one">
+      <view class="lable">
+        <text class="required">*</text>
+        <text class="id">银行卡个人账户(本人)：</text>
+      </view>
+      <input type="text" class="bank-input" bindinput="bankInput" placeholder="请输入你的银行卡账号" placeholder-style="font-size:24rpx;color:#DDDDDD;"></input>
+    </view>
+    <view class="bank-card" bindtap="showBankSelect">
+      <view class="lable">
+        <text class="required">*</text>
+        <text class="id">银行卡开户银行：</text>
+      </view>
+      <input type="text"  value="{{bankName}}" class="city" disabled="disabled" placeholder="请选择银行卡开户银行" placeholder-style="font-size:24rpx;color:#DDDDDD;"></input>
+      <image mode="widthFix" src="/image/xiangyou2.png"></image>
+    </view>
+    <view class="real-name">
+      <view class="lable">
+        <text class="required">*</text>
+        <text class="id">联系电话：</text>
+      </view>
+      <input type="text" maxlength="11" placeholder="请输入您的联系电话"  bindinput="phoneInput" placeholder-style="font-size:24rpx;color:#DDDDDD;"></input>
+    </view>
+    <view class="real-name">
+      <view class="lable">
+        <text class="required">*</text>
+        <text class="id">代理身份：</text>
+      </view>
+      <text class="agent">{{dentity}}</text>
+    </view>
+    <view class="bank-card" bindtap="showAreaSelect">
+      <view class="lable">
+        <text class="required">*</text>
+        <text class="id">代理的城市：</text>
+      </view>
+      <input type="text"  value="{{areaStr}}" class="city" disabled="disabled" placeholder="请选择代理的城市商圈" placeholder-style="font-size:24rpx;color:#DDDDDD;"></input>
+      <image mode="widthFix" src="/image/xiangyou2.png"></image>
+    </view>
+    <view class="street" wx:if="{{townList.length > 0}}">
+      <view class="name" wx:for="{{townList}}" wx:key="index">
+            {{item}}
+      </view>
+    </view>
+    <!-- <view class="agreement">
+      <view class="lable">
+        <text class="required">*</text>
+        <text class="id">平台合作协议：</text>
+      </view>
+      <view class="photo">
+        <image mode="widthFix" src="/image/zhaoxiang.png"></image>
+        <text>平台合作协议</text>
+      </view>
+      <view class="photo ">
+        <image mode="widthFix" class="update-photo" src="/image/zhaoxiang.png"></image>
+      </view>
+    </view> -->
+    <view class="submit">
+      <view class="determine {{!checked?'none-checked':'more-checked'}}" bindtap="submit"  >确认提交</view>
+      <view class="clause">
+          <checkbox color="var(--themeColor)" bindtap="Checkedgoods" data-checked="{{checked}}" checked="{{checked}}"></checkbox>
+        <text>点击提交，即表示您同意</text>
+        <text class="details">《商互通服务协议》</text>
+      </view>
+    </view>
+  </form>
+  <select-bank isShowSelect="{{isShowBankSelect}}" bindselectEnd="selectBankEnd"></select-bank>
+  <select-city-business-circle maxStep="{{maxStep}}" isShowSelect="{{isShowSelect}}"  bindselectEnd="selectEnd"></select-city-business-circle>
+</view>

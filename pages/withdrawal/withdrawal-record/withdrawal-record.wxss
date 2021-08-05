@@ -1,0 +1,61 @@
+page {
+  min-height: 100%;
+  background: #FBF9FD;
+}
+.record {
+  width: 100%;
+}
+.record .details {
+  width: 710rpx;
+  height: 123rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  margin: 20rpx 20rpx 0;
+}
+.record .details navigator {
+  display: flex;
+  justify-content: space-between;
+}
+.record .details navigator .information {
+  flex: 6;
+  margin: 27rpx 40rpx 0 27rpx;
+}
+.record .details navigator .information .money {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.record .details navigator .information .money text {
+  font-size: 26rpx;
+  color: #333;
+  font-weight: 500;
+}
+.record .details navigator .information .money .price {
+  font-weight: bold;
+}
+.record .details navigator .information .time {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 23rpx;
+}
+.record .details navigator .information .time text {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #999;
+}
+.record .details navigator .information .time .success {
+  color: #24B512;
+}
+.record .details navigator .information .time .process {
+  color: var(--themeColor);
+}
+.record .details navigator .information .time .fail {
+  color: #F94B4B;
+}
+.record .details navigator image {
+  width: 10rpx;
+  height: 18rpx;
+  margin-top: 53rpx;
+  margin-right: 28rpx;
+}

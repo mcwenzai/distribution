@@ -1,0 +1,115 @@
+.modal-mask{
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:#000;
+  opacity: 0.4;
+  overflow: hidden;
+  z-index: 9000;
+}
+.modal-dialog{
+  width: 560rpx;
+  height: 806rpx;
+  z-index: 9999;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  position: relative;
+  .img{
+    width: 60rpx;
+    height: 40rpx;
+    background: #F5F5F5;
+    border-radius: 0rpx 20rpx 0rpx 20rpx;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    image{
+      width: 18rpx;
+      height:18rpx;
+    }
+  }
+  .modal-title{
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #000;
+    padding-top: 50rpx;
+    text-align: center;
+  }
+  .modal-content{
+    font-size: 22rpx;
+    font-weight: 500;
+    color: #666;
+    margin: 26rpx 25rpx 0;
+    .tex{
+      margin-top: 15rpx;
+      .crity{
+        color: var(--themeColor);
+      }
+      .name{
+        font-weight: bold;
+      }
+      .demonstration{
+        width: 360rpx;
+        height: 282rpx;
+        margin-left: 80rpx;
+      }
+    }
+  }
+  .codeed{
+    width: 376rpx;
+    height:376rpx;
+    margin:50rpx 90rpx 0;
+  }
+  .full-name{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #333;
+  }
+  .code{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20rpx;
+    font-size: 24rpx;
+    font-weight: bold;
+    color: #999;
+  }
+  .button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60rpx 40rpx 0;
+    border-top: 2rpx solid #F8F8F8;
+    padding-top: 40rpx;
+    .preservation{
+      width: 200rpx;
+      height: 52rpx;
+      line-height: 52rpx;
+      text-align: center;
+      background: #EEEEEE;
+      border-radius: 26rpx;
+      font-size: 24rpx;
+      font-weight: bold;
+      color: #999;
+    }
+    .share{
+      width: 200rpx;
+      height: 52rpx;
+      line-height: 52rpx;
+      text-align: center;
+      background: var(--themeColor);
+      border-radius: 26rpx;
+      font-size: 24rpx;
+      font-weight: bold;
+      color: #fff;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

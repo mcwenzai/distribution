@@ -1,0 +1,61 @@
+page{
+  min-height: 100%;
+  background: #FBF9FD;
+}
+.record{
+  width: 100%;
+  .details{
+    width: 710rpx;
+    height: 123rpx;
+    background: #FFFFFF;
+    border-radius: 24rpx;
+    margin: 20rpx 20rpx 0;
+    navigator{
+      display: flex;
+      justify-content: space-between;
+      .information{
+        flex: 6;
+        margin: 27rpx 40rpx 0 27rpx;
+        .money{
+          display: flex;
+          justify-content: space-between;
+          align-content: center;
+          text{
+            font-size: 26rpx;
+            color: #333;
+            font-weight: 500;
+          }
+          .price{
+            font-weight: bold;
+          }
+        }
+        .time{
+          display: flex;
+          justify-content: space-between;
+          align-content: center;
+          margin-top: 23rpx;
+          text{
+            font-size: 24rpx;
+            font-weight: 500;
+            color: #999;
+          }
+          .success{
+            color: #24B512;
+          }
+          .process{
+            color: var(--themeColor);
+          }
+          .fail{
+            color: #F94B4B;
+          }
+        }
+      }
+      image{
+        width: 10rpx;
+        height: 18rpx;
+        margin-top: 53rpx;
+        margin-right: 28rpx;
+      }
+    }
+  }
+}

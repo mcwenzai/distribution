@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "设置商圈",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "component": true,
+  "usingComponents": {
+    "address":"../../components/address/address"
+  }
+}

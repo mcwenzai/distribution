@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "店铺管理",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "no-data":"../../components/no-Data/no-Data"
+  }
+}

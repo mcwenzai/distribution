@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "earnings-details-list":"../components/earnings-Details-List/earnings-Details-List",
+    "rule":"../components/rule/rule",
+    "no-data":"../components/no-Data/no-Data"
+  },
+  "navigationBarBackgroundColor": "#F85861",
+  "navigationBarTextStyle":"white",
+  "navigationBarTitleText": "收益管理"
+}

@@ -1,0 +1,22 @@
+/* pages/college/college-image-text-details/college-image-text-details.wxss */
+
+.title{
+    padding: 25rpx 20rpx;
+    line-height: 44rpx;
+    font-size: 28rpx;
+    color: #333333;
+    background: #ffffff;
+    border-bottom: 1px solid #F9F9F9;
+    width: 710rpx;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.interval {
+    width: 750rpx;
+    height: 10rpx;
+    background: #F9F9F9;
+}
+.content{
+    padding: 20rpx;
+    padding-top: 25rpx;
+}

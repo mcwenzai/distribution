@@ -1,0 +1,28 @@
+<view wx:if="{{isShowSelect}}">
+  <view class="modal-mask"></view>
+  <view class="modal-dialog">
+    <view class="close" bindtap="close">
+      <image src="../../../image/guanbi.png"></image>
+    </view>
+    <view class="title">请选择开户银行</view>
+    <view class="search">
+        <input type="text" bindinput="searchInput" placeholder="点击搜索开户银行" placeholder-class="searchPlac"></input>
+        <text bindtap="search">搜索</text>
+    </view>
+    <view class="region">
+      <view class="region-tabs">
+        <view class="tab active">请选择</view>
+        
+      </view>
+      <scroll-view class="select-scroll" scroll-y="{{true}}" scroll-top="{{scrollTop}}">
+        <view wx:for="{{list}}"  wx:key="index"  class="select-line"   data-index="{{index}}" data-name="{{item.bankName}}" bindtap="selectOption">
+        <view class="left">
+            <image class="bank" src="../../../image/bank.png"></image>
+            <view>{{item.bankName}}</view>
+        </view>
+        <image  src="../../../image/right.png"></image>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

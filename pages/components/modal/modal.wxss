@@ -1,0 +1,71 @@
+.modal-mask {
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.4;
+  overflow: hidden;
+  z-index: 9000;
+}
+.modal-dialog {
+  width: 640rpx;
+  height: 360rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  z-index: 9999;
+  position: absolute;
+  top: 334rpx;
+  left: 50%;
+  margin-left: -320rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-bottom: 40rpx;
+}
+.modal-dialog .title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 34rpx;
+}
+.modal-dialog .prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.modal-dialog .prompt text {
+  height: 45rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #000;
+}
+.modal-dialog .option {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.modal-dialog .option .delete {
+  width: 240rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1rpx solid #BBBBBB;
+  border-radius: 34rpx;
+  color: #999;
+}
+.modal-dialog .option .cancel {
+  width: 240rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+  background: var(--themeColor);
+  border-radius: 34rpx;
+  color: #fff;
+}

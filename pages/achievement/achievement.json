@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "业绩",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "component": true,
+  "usingComponents": {
+    "modal":"../components/modal/modal"
+  }
+}

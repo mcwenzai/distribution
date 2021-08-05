@@ -1,0 +1,13 @@
+<view wx:if="{{flag}}">
+  <view class="modal-mask"></view>
+  <view class="modal-dialog">
+    <view class="title">温馨提示</view>
+    <view class="prompt">
+      <text>{{promptText}}</text>
+    </view>
+    <view class="option">
+      <view wx:if="{{showLeftBtn}}" class="delete" bindtap="onCancel">{{cancelBtnText}}</view>
+      <view wx:if="{{showRightBtn}}"class="cancel" bindtap="onConfirm">{{confirmBtnText}}</view>
+    </view>
+  </view>
+</view>

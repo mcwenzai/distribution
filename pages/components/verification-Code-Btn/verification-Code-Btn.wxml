@@ -1,0 +1,4 @@
+<!--pages/components/verification-Code-Btn/verification-Code-Btn.wxml-->
+<view>
+   <view class="btn" bindtap="getCode">{{btntxt}}</view>
+</view>

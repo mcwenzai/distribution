@@ -1,0 +1,77 @@
+/* pages/components/earnings-Details-List/earnings-Details-List.wxss */
+.details-content{
+  background-color: #ffffff;
+  color: #666666;
+  width: 710rpx;
+  margin:0rpx auto 20rpx;
+  border-radius: 12rpx;
+}
+.details-content-msg{
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 28rpx;
+}
+.details-content-msg .date{
+  font-size: 28rpx;
+  color: #333333;
+  
+}
+.msg-right{
+  display: flex;
+  align-items: center;
+}
+.msg-right .money{
+  padding-right: 12rpx;
+  font-weight: bold;
+  color: #EF6D1F;
+  font-size: 28rpx;
+}
+.msg-right image{
+  display: block;
+  width: 18rpx;
+  height: 10rpx;
+}
+.details-content-info {
+  width: 660rpx;
+  margin: 0 auto;
+  overflow: hidden;
+  will-change: height;
+}
+.hidden{
+  height: 0;
+}
+.details-content-info .info{
+  padding: 22rpx 15rpx;
+  border-top: 1px solid  #FBF9FD;
+}
+.info-line-one-block{
+  display: flex;
+}
+.info-line-one-block .time{
+  font-size: 24rpx;
+  color: #333333;
+}
+.info-line-one-block .type{
+  font-size: 24rpx;
+  color: #333333;
+  padding-left: 40rpx;
+}
+.info-line-one{
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #333333;
+ 
+}
+.info-line-two{
+  display: flex;
+  margin-top: 20rpx;
+  justify-content: space-between;
+  color: #999999;
+  font-size: 24rpx;
+}
+.info-line-two .state{
+  color: #F85A5E;
+}

@@ -1,0 +1,31 @@
+<view class="login">
+ <view class="logo">
+  <image src="../../image/logo01.png" class="logo-one"></image>
+  <image src="../../image/logo02.png" class="logo-two"></image>
+ </view>
+ <view class="content">
+   <view class="phone"> 
+     <view class="lable">手机号</view>
+     <view class="phone-input">
+       <view class="area">+86</view>
+       <input type="number"  value="{{phone}}" maxlength="11" bindinput="phoneInput" placeholder="请输入手机号码" placeholder-class="plholder" ></input>
+     </view>
+   </view>
+   <view class="password"> 
+     <view class="lable">密码</view>
+     <view class="password-input">
+       <input type="text" password="{{!isVisible}}" value="{{password}}" maxlength="32" bindinput="passwordInput" placeholder="请输入密码" placeholder-class="plholder" ></input>
+       <image src="../../image/visible.png" wx:if="{{isVisible}}" bindtap="setVisible" data-visible="1"></image>
+       <image src="../../image/no-visible.png" wx:else bindtap="setVisible"  data-visible="2"></image>
+     </view>
+   </view>
+   <view class="login-btn" bindtap="login">
+    登录
+   </view>
+   <view class="nav">
+     <navigator hover-class="none" class="forget" url="./forget/forget">忘记密码？</navigator>
+     <view></view>
+     <navigator hover-class="none" class="register" url="./register/register">快速注册></navigator>
+   </view>
+  </view>
+</view>

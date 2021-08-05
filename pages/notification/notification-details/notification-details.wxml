@@ -1,0 +1,10 @@
+<!--pages/notification/notification-details/notification-details.wxml-->
+<view class="notification-details">
+    <view class="content">
+        <view class="title">{{details.noticeTitle}}</view>
+        <view class="time">{{details.updateTime}}</view>
+        <view class="rich-text">
+            <rich-text  nodes="{{details.noticeContent}}"></rich-text>
+        </view>
+    </view>
+</view>

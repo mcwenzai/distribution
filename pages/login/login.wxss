@@ -1,0 +1,122 @@
+/* pages/login/login.wxss */
+.logo-one{
+  display: block;
+  width: 171rpx;
+  height: 171rpx;
+  margin:35rpx auto 34rpx
+}
+.logo-two{
+  display: block;
+  width: 330rpx;
+  height: 34rpx;
+  margin:0 auto;
+}
+.content{
+  width: 640rpx;
+  margin: 114rpx auto 0;
+}
+.phone .lable{
+  font-size: 28rpx;
+  color: #999999;
+  font-weight: bold;
+}
+.phone .phone-input{
+  margin-top: 18rpx;
+  border-bottom:1px solid #DDDDDD ;
+  display: flex;
+  height: 66rpx;
+  align-items: center;
+  line-height: 66rpx;
+}
+.plholder{
+  font-size: 28rpx;
+  color: #CCCCCC;
+}
+.phone .area{
+  padding-left: 20rpx;
+  font-weight: bold;
+  height: 66rpx;
+  line-height: 66rpx;
+}
+.phone .phone-input input{
+  padding-left: 40rpx;
+  font-size: 28rpx;
+  display: block;
+  width: 100%;
+  padding-right: 20rpx;
+  color:#333 ;
+}
+
+.password .lable{
+  font-size: 28rpx;
+  color: #999999;
+  font-weight: bold;
+}
+.password .password-input{
+  margin-top: 18rpx;
+  border-bottom:1px solid #DDDDDD ;
+  display: flex;
+  height: 66rpx;
+  align-items: center;
+  line-height: 66rpx;
+  padding-right: 20rpx;
+}
+.password{
+  font-size: 28rpx;
+  color: #CCCCCC;
+  margin-top: 60rpx;
+}
+
+.password .password-input input{
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  display: block;
+  width: 100%;
+  padding-right: 20rpx;
+  color:#333 ;
+}
+.password .password-input image{
+  display: block;
+  width: 36rpx;
+  height: 26rpx;
+  flex-shrink: 0;
+}
+.login-btn{
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #FBF9FD;
+  width: 640rpx;
+  height: 84rpx;
+  background: var(--themeColor);
+  border-radius: 40rpx;
+  margin:100rpx auto 0;
+  line-height: 84rpx;
+  text-align: center;
+
+}
+.nav{
+  display: flex;
+  height: 48rpx;
+  margin-top: 30rpx;
+  align-items: center;
+  justify-content: center;
+}
+.nav view{
+  width: 2rpx;
+  height: 28rpx;
+  background: #DDDDDD;
+  margin: 0 40rpx;
+ 
+}
+
+.forget{
+  color: #999999;
+  height: 48rpx;
+  line-height: 48rpx;
+}
+.register{
+  color: var(--themeColor);
+  height: 48rpx;
+  line-height: 48rpx;
+}
+

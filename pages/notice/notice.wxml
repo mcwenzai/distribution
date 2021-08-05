@@ -1,0 +1,39 @@
+<view class="notice">
+  <no-data show="{{noticeList.length<=0}}" title="暂无通知"></no-data>
+  <view class="join" wx:for="{{noticeList}}" wx:key="index">
+    <view class="join-notice">
+      <view class="title">
+        <image wx:if="{{item.noticeType==1}}" mode="widthFix" src="/image/jiaru.png"></image>
+        <image wx:if="{{item.noticeType==2}}" mode="widthFix" src="/image/duanyue.png"></image>
+        <image wx:if="{{item.noticeType==3}}" mode="widthFix" src="/image/daichuli.png"></image>
+        <text wx:if="{{item.noticeType==1}}">加入通知</text>
+        <text wx:if="{{item.noticeType==2}}">断约通知</text>
+        <text wx:if="{{item.noticeType==3}}">续费通知</text>
+      </view>
+      <view class="time">{{item.createTime}}</view>
+    </view>
+    <image mode="widthFix" class="handle" src="/image/daichuli.png" wx:if="{{item.status==1}}"></image>
+    <image mode="widthFix" class="handle" src="/image/yichuli.png" wx:if="{{item.status==2}}"></image>
+    <view class="information">
+      <text>{{item.noticeContent}}</text>
+    </view>
+    <view  wx:if="{{item.status!=3}}" class="details" bindtap="details" data-type="{{item.noticeType}}"  data-phone="{{item.createBy}}" data-id="{{item.noticeId}}"  data-status="{{item.status}}">
+      <text>查看详情</text>
+      <image mode="widthFix" src="/image/xiangyou2.png"></image>
+    </view>
+  </view>
+
+
+  <!-- <view class="join">
+    <view class="join-notice">
+      <view class="title">
+        <image mode="widthFix" src="/image/xufei.png"></image>
+        <text>续费通知</text>
+      </view>
+      <text class="time">2021/01/12 12:24:36</text>
+    </view>
+    <view class="information">
+      <text>您已成功续费，快去开启您的财富之路吧！</text>
+    </view>
+  </view> -->
+</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "首页",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "no-data":"../components/no-Data/no-Data"
+  }
+}

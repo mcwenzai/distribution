@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "公告类容",
+  "usingComponents": {
+    "no-data":"../components/no-Data/no-Data"
+  }
+}

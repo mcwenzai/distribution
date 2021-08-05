@@ -1,0 +1,118 @@
+page {
+  background: #FBF9FD;
+}
+.district .choice {
+  width: 710rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  margin: 20rpx 20rpx 0;
+}
+.district .choice .setup {
+  width: 650rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50rpx 27rpx 0;
+  margin-bottom: 20rpx;
+}
+.district .choice .setup .business {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #666;
+}
+.district .choice .setup .business .asterisk {
+  color: #F76C3F;
+}
+.district .choice .setup .business input {
+  color: #000;
+  margin-left: 50rpx;
+}
+.district .choice .setup .business #ress {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.district .choice .setup image {
+  width: 10rpx;
+  height: 18rpx;
+}
+.district .choice .stre-name {
+  margin: 0 27rpx 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.district .choice .stre-name .street {
+  min-width: 180rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: #FBF9FD;
+  border-radius: 25rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.district .choice .stre-name .street text {
+  font-size: 22rpx;
+  font-weight: bold;
+  color: var(--themeColor);
+}
+.district .choice .stre-name .street image {
+  width: 16rpx;
+  height: 16rpx;
+  margin-left: 15rpx;
+}
+.district .choice .setup-name {
+  width: 650rpx;
+  height: 80rpx;
+  display: flex;
+  align-content: center;
+  border-top: 2rpx solid #FBF9FD;
+  padding-top: 30rpx;
+  margin-left: 27rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+}
+.district .choice .setup-name .asterisk {
+  color: #F76C3F;
+}
+.district .choice .setup-name text {
+  color: #666;
+}
+.district .choice .setup-name input {
+  color: #000;
+  margin-left: 50rpx;
+}
+.district .option {
+  display: flex;
+  justify-content: space-around;
+  margin: 80rpx 55rpx 0;
+}
+.district .option .cancel {
+  width: 300rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1rpx solid #DDDDDD;
+  border-radius: 42rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #999;
+}
+.district .option .preservation {
+  width: 300rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  text-align: center;
+  background: var(--themeColor);
+  border-radius: 42rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #fff;
+}

@@ -1,0 +1,111 @@
+page {
+  background: #FBF9FD;
+}
+.achievement {
+  width: 100%;
+}
+.achievement .notice {
+  width: 100%;
+  height: 156rpx;
+  background: #FFFFFF;
+  margin-top: 4rpx;
+}
+.achievement .notice navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 34rpx;
+}
+.achievement .notice navigator .img {
+  width: 88rpx;
+  height: 88rpx;
+  margin-left: 34rpx;
+}
+.achievement .notice navigator .img image {
+  width: 100%;
+}
+.achievement .notice navigator .img .number {
+  width: 21rpx;
+  height: 21rpx;
+  line-height: 21rpx;
+  text-align: center;
+  background: #F76C3F;
+  border-radius: 50%;
+  border: 2rpx solid #FFFFFF;
+  position: fixed;
+  top: 34rpx;
+  left: 101rpx;
+  font-size: 16rpx;
+  font-weight: bold;
+  color: #fff;
+}
+.achievement .notice navigator .noticelist {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: 32rpx;
+  margin-right: 33rpx;
+}
+.achievement .notice navigator .noticelist .bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.achievement .notice navigator .noticelist .bar text {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+}
+.achievement .notice navigator .noticelist .bar .item {
+  font-size: 20rpx;
+  font-weight: bold;
+  color: #BBB;
+}
+.achievement .notice navigator .noticelist .details {
+  width: 550rpx;
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 18rpx;
+}
+.achievement .notice navigator .noticelist .details .user {
+  color: #F76C3F;
+}
+.achievement .information {
+  margin-top: 14rpx;
+}
+.achievement .information .district {
+  width: 100%;
+  height: 156rpx;
+  background: #FFFFFF;
+  margin-top: 4rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.achievement .information .district .information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 34rpx;
+}
+.achievement .information .district .information image {
+  width: 88rpx;
+  height: 88rpx;
+}
+.achievement .information .district .information text {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+  margin-left: 32rpx;
+}
+.achievement .information .district .right {
+  width: 12rpx;
+  height: 22rpx;
+  margin-right: 34rpx;
+  margin-top: 15rpx;
+}

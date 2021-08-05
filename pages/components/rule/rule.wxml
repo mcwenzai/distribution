@@ -1,0 +1,24 @@
+<view wx:if="{{flag}}">
+  <view class="modal-mask"></view>
+  <view class="modal-dialog">
+    <view class="close" bindtap="onCancel">
+      <image src="../../../image/guanbi.png"></image>
+    </view>
+    <view class="modal-title">{{title}}</view>
+    <view class="modal-content">
+      <view wx:for="{{ruleList}}" wx:key="index">
+        {{item.lineText}}
+        <view wx:for="{{item.list}}" wx:if="{{item.list && item.list.length}}" wx:for-item="value" wx:key="index">{{value}}</view>
+      </view>
+      <!-- <view>1、只有可提现余额可提现，未到账余额无法提现。</view>
+      <view> 
+        2、需满足以下条件，才可通过提现申请：
+          <view>（1）单笔提现金额最低为0元；</view>
+          <view>（2）提现需扣除提现金额6%手续费。</view>
+      </view>
+      <view>3、申请提现后可至“我的-收益管理-提现记录”内查看提现进度。 </view>
+      <view>4、如果提现出现任何问题，可“意见反馈”或“联系客服”处理。</view> -->
+    </view>
+    <view class="btn-cancel" bindtap="onCancel">我知道了</view>
+  </view>
+</view>

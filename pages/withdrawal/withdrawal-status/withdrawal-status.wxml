@@ -1,0 +1,11 @@
+<view class="status">
+  <view class="status-success">
+    <image mode="widthFix" src="/image/chenggong.png"></image>
+    <view class="success">申请提现成功</view>
+    <view class="jump">
+      <text>具体进度请至</text>
+      <text class="see">“我的-收益管理-提现”</text>
+      <text>记录内查看</text>
+    </view>
+  </view>
+</view>

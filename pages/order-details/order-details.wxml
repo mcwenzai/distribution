@@ -1,0 +1,23 @@
+<view class="order-details">
+  <view class="order">
+    <no-data show="{{list.length<=0}}" title="暂无明细"></no-data>
+    <view class="detailed-column" wx:for="{{list}}" wx:key="index">
+      <view class="name">
+        <text>{{item.type=='1' ? '厂商' : '商户'}}-{{item.source=='1' ? "交易订单" : '推荐费'}}</text>
+        <text class="price">+ {{item.arrivalAmount}}元</text>
+      </view>
+      <view class="cost">
+        <text>{{item.source=='1' ? "订单编号" : '流水号'}}：</text>
+        <text>{{item.source=='1' ? item.orderNo : item.fundId}}</text>
+      </view>
+      <view class="cost" wx:if="{{item.source==1}}">
+        <text>支付时间：</text>
+        <text>{{item.createTime}}</text>
+      </view>
+    </view>
+      
+      
+     
+    </view>
+
+  </view>

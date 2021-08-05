@@ -1,0 +1,51 @@
+<view class="verificaiton">
+  <!-- <view class="navigation-bar">
+    <view class="bar {{item.isActive?'active':''}}" wx:key="id" wx:for="{{stype}}" bindtap="handleItemTap" data-index="{{index}}" data-id="{{item.id}}">
+      <view class="number">{{Id!==1&&item.id==3?2:item.id}}</view>
+      <text class="name">{{item.laber}}</text>
+    </view>
+  </view> -->
+
+  <block wx:if="{{cunId===1}}">
+    <upload-Identity></upload-Identity>
+  </block>
+  <!-- <block wx:if="{{Id===1&&cunId===2}}">
+    <view class="membership-fee">
+      <view class="tips">
+        <view class="introduce">温馨提示：如果因信息填写错误导致认证不通过，有2次修改信息重新认证的机会，征信问题无2次修改机会，2次机会用完后需重新缴费认 证，认证费用将原路退还！</view>
+      </view>
+      <view class="certification-fee">
+        <view class="imk">
+          <image  mode="widthFix" src="/image/jiaofei.png"></image>
+        </view>
+        <view class="cost">身份认证费用</view>
+        <view class="price">
+          <text>￥</text>
+          <text class="number">300</text>
+        </view>
+        <view class="pay">
+          <navigator url="./payment/payment">立即缴费</navigator>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:if="{{cunId===3}}">
+    <view class="result">
+      <view class="examine">身份认证审核进度：</view>
+      <view class="progress-bar">
+        <view class="ckaser" wx:for="{{review}}" wx:key="item.name">
+          <view class="bar">
+            <view class="spot success"></view>
+            <view class="line"></view>
+          </view>
+          <view class="details">
+            <text class="submit {{item.id!==1?'after':''}}">{{item.name}}</text>
+            <text class="reasons fail" wx:if="{{item.reason!==''}}">{{item.reason}}</text>
+            <text class="time">{{item.tiem}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="complete">完成</view>
+    </view>
+  </block> -->
+</view>

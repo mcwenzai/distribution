@@ -1,0 +1,40 @@
+<view class="feedback">
+  <view class="name">填写您宝贵的意见</view>
+  <view class="box">
+    <textarea value="{{content}}" fixed auto-focus placeholder="智超商互通在意每一个声音，请在这里输入您的意见和反馈......" placeholder-class="words" maxlength="{{max}}" bindinput="getValueLength"></textarea>
+    <text>{{currentWordNumber|0}}/{{max}}</text>
+  </view>
+  <view class="submit">提交反馈</view>
+</view>
+<view class="contact">
+  <view class="img">
+    <image mode="widthFix" src="/image/wexin22.png"></image>
+  </view>
+  <view class="mode">
+    <view class="wechat">
+      <text>添加客服微信号：</text>
+      <text class="number">zcyj666</text>
+    </view>
+    <text class="copy">点击复制微信号，前往微信添加好友</text>
+  </view>
+</view>
+<view class="contact">
+  <view class="img">
+    <image mode="widthFix" src="/image/dianhua22.png"></image>
+  </view>
+  <view class="mode">
+    <view class="wechat">
+      <text>客服电话：</text>
+      <text class="number">0731-88715234</text>
+    </view>
+    <text class="copy">点击拨打客服电话</text>
+  </view>
+</view>
+<view class="contact">
+  <view class="img">
+    <image mode="widthFix" src="/image/kefu.png"></image>
+  </view>
+  <view class="time">
+   客服时间：08:30-17:30
+  </view>
+</view>

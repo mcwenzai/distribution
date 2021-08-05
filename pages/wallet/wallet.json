@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的钱包",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "rule":"../components/rule/rule",
+    "no-data":"../components/no-Data/no-Data"
+  }
+}

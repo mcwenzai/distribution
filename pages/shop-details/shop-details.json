@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "店铺明细",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "no-data":"../components/no-Data/no-Data"
+  }
+}

@@ -1,0 +1,30 @@
+.college {
+  min-height: 100vh;
+  background: #FBF9FD;
+  overflow: hidden;
+}
+.college .cell {
+  width: 710rpx;
+  height: 110rpx;
+  background: #FFFFFF;
+  border-radius: 12rpx;
+  margin: 20rpx auto 0 ;
+  display: flex;
+  align-items: center;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+}
+.college .cell .icon {
+  width: 56rpx;
+  height: 56rpx;
+  display: block;
+}
+.college .cell text {
+  flex: 1;
+  padding-left: 42rpx;
+}
+.college .cell .right {
+  width: 14rpx;
+  height: 24rpx;
+  display: block;
+}

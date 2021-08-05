@@ -1,0 +1,82 @@
+<view class="handele">
+  <view class="information-bar">
+    <text>{{noticeId==4?'店铺名称':'姓名'}}：</text>
+    <text class="name">{{details.userName}}</text>
+  </view>
+  <view class="information-bar" wx:if="{{noticeId==4}}">
+    <text>店铺类型：</text>
+    <text class="name">商户/厂商</text>
+  </view>
+  <view class="information-bar">
+    <text>{{noticeId==4?'联系人':'手机号'}}：</text>
+    <text class="name">{{details.phone}}</text>
+  </view>
+  <!-- <view class="information-bar" >
+    <text>店铺地址：</text>
+    <text class="name">湖南省长沙市岳麓区湘浙市场西4楼4-12单元</text>
+  </view> -->
+  <view class="information-bar"  wx:if="{{!isSelf}}">
+    <text>申请代理身份：</text>
+    <text class="name" wx:if="{{details.userType==2}}">商圈代理</text>
+    <text class="name" wx:if="{{details.userType==3}}">超级合伙人</text>
+  </view>
+  <view class="information-bar">
+    <text>申请代理城市：</text>
+    <text class="name">{{details.location}}</text>
+  </view>
+  <block wx:if="{{!isSelf}}">
+    <picker bindchange="bindPickerChange" disabled="{{noticeId !=1 || isHandle}}" value="{{pickerIndex}}" range="{{businessList}}"
+      range-key="businessAreaName">
+      <view class="information-bar pickerbox">
+        <text>设置商圈：</text>
+        <text class="name" wx:if="{{!isHandle}}">{{businessAreaName ? businessAreaName : '' }}</text>
+        <text class="name" wx:else>{{details.businessAreaName ? details.businessAreaName : '' }}</text>
+        <image class="right" src="../../image/xiangyou3.png" wx:if="{{noticeId==1 && !isHandle}}"></image>
+      </view>
+    </picker>
+  </block>
+  
+  <view class="street" wx:if="{{townName && noticeId==1}}">
+    <input type="text" value="{{townName}}" disabled="disabled"></input>
+  </view>
+  <view class="street" wx:if="{{details.addressTown}}">
+    <input type="text" value="{{details.addressTown}}" disabled="disabled"></input>
+  </view>
+  <view class="information-bar" wx:if="{{noticeId!==5}}">
+    <text>申请加入时间：</text>
+    <text class="name">{{details.createTime}}</text>
+  </view>
+  <view class="information-bar" wx:if="{{noticeId!=1 && noticeId!=2}}">
+    <text>到期时间：</text>
+    <text class="name">{{details.createTime}}</text>
+  </view>
+  <view class="renew" wx:if="{{noticeId==1||noticeId==2}}">
+    <text class="asterisk">*</text>
+    <text>{{noticeId==1?'有效时间':'续期时间'}}：</text>
+  </view>
+  <view class="time" wx:if="{{ noticeId==1||noticeId==2 || noticeId==3 && !isSelf }}">
+    <date-picker disabled="{{isHandle}}" dateStr="{{ details.startTime ? details.startTime : '' }}" mode="dateTime" class="price" placeholder="开始时间" bind:onPickerChange="onStartTimePickerChange">
+    </date-picker>
+    <text></text>
+    <date-picker disabled="{{isHandle}}" dateStr="{{ details.endTime ? details.endTime : '' }}" mode="dateTime" class="price" placeholder="结束时间" bind:onPickerChange="onEndTimePickerChange">
+    </date-picker>
+    <image mode="widthFix" src="/image/rili.png"></image>
+  </view>
+</view>
+<view class="choice" wx:if="{{!isHandle}}">
+  <view class="contact" wx:if="{{noticeId==3}}" bindtap="callPhone"> 
+    <image mode="widthFix" src="/image/dianhua.png"></image>
+    <text>电话联系</text>
+  </view>
+  <!-- <view class="contact {{reminder?'ckcant':''}}" wx:if="{{noticeId==3}}" bindtap="remind">
+    <image mode="widthFix" src="/image/tixing.png"></image>
+    <text>提醒</text>
+  </view> -->
+  <view class="confirm" wx:if="{{noticeId==3}}" bindtap="confirmPay">确认已续费</view>
+  <view class="pay" wx:if="{{noticeId==1 || noticeId==2}}">
+    <!-- <image mode="widthFix" src="/image/dianhua2.png" wx:if="{{noticeId==1}}"></image> -->
+    <!-- <view wx:if="{{noticeId==3}}">联系缴费</view> -->
+    <view wx:if="{{noticeId==1 || noticeId==2}}" bindtap="agreeJoinUs">同意加入</view>
+    <!-- <view wx:if="{{noticeId==5}}">缴费</view> -->
+  </view>
+</view>

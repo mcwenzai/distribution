@@ -1,0 +1,113 @@
+<view class="personal">
+  <Choose-identity identity="{{identityList}}"  flag="{{isShowChoose}}" id="choose" bind:error="onCancel" bind:success="onConfirm"></Choose-identity>
+    
+  <view class="userInfo">
+    <view class="img">
+      <image mode="aspectFill" src="{{userInfo.avatar ? userInfo.avatar :'../../image/tx.png'}}"></image>
+    </view>
+   <view class="user">
+     <view class="user-image">
+       <view class="user-name">{{userInfo.userName ? userInfo.userName : '商互通小助手' }}</view>
+       <image mode="heightFix" wx:if="{{imagrurl}}" src="{{imagrurl}}"></image>
+     </view>
+     <view class="phone">{{userInfo.phone}}</view>
+     <view class="code">
+       <text>邀请码：</text>
+       <text>{{code}}</text>
+       <image mode="widthFix" class="copy" bindtap="copyBtn" src="/image/fuzhi.png"></image>
+     </view>
+   </view>
+   <view class="verify" >
+     <view class="authentication"   >
+       <view class="certification" wx:if="{{userInfo.status=='NO_AUTHENTICATION' || userInfo.status=='FAILED' }}" bindtap="chooseIdentity">
+          <image  mode="widthFix" class="complete" src="/image/renzheng.png"></image>
+          <text class="name">身份认证</text>
+       </view>
+      
+       <view class="certification" wx:if="{{userInfo.status =='EXAMINE'}}">
+          <image  mode="widthFix" class="complete" src="/image/renzheng.png"></image>
+          <text class="name">身份审核中</text>
+       </view>
+       <view class="certification" wx:if="{{userInfo.status !='EXAMINE' && userInfo.status !='FAILED' && userInfo.status!='NO_AUTHENTICATION'}}">
+          <image  mode="widthFix" class="complete" src="/image/renzheng.png"></image>
+          <text class="name">身份已认证</text>
+       </view>
+     </view>
+      <view class="qrcode">
+       <view class="code" bindtap="chenCode">
+          <image  mode="widthFix" class="invitation" src="/image/erweima.png"></image>
+        <text>邀请码</text>
+       </view>
+       <explain id="expla" myValue="{{1}}"  wxCode="{{wxCode}}" name="{{userInfo.userName}}" phone="{{userInfo.phone}}" bind:error="onCancelss"></explain>
+     </view>
+   </view>
+  </view>
+  <view class="money" >
+    <!--  -->
+    <image src="../../image/yue.png"> </image>
+    <navigator url="../wallet/wallet">
+      <view class="balance">
+        <text>余额(元)</text>
+        <text class="number">{{userInfo.balance ? userInfo.balance : 0 }}</text>
+      </view>
+      <view class="withdrawal">
+        <text>去提现</text>
+        <image mode="widthFix" src="/image/xiangyou.png"></image>
+      </view>
+    </navigator>
+  </view>
+  <view class="up" wx:if="{{userInfo.userType == 3}}" bindtap="goUp">
+    <image  class="vip" src="../../image/vip.png"></image>
+    <text>升级成为超级合伙人即享专属特权</text>
+    <image class="right" src="../../image/xiangyou3.png"></image>
+  </view>
+  <view class="daily" wx:if="{{userInfo.userType==1}}">
+    <navigator url="../business-district/business-district">
+      <view class="daily-goods">
+        <image mode="widthFix" class="district" src="/image/shangquian2.png"></image>
+        <text>商圈设置</text>
+      </view>
+      <view class="goods">
+        <text>去设置</text>
+        <image mode="widthFix"src="/image/xiangyou2.png"></image>
+      </view>
+    </navigator>
+  </view>
+  <view class="tool">
+    <view class="used">常用工具</view>
+    <view class="see">
+      <view class="item-main" >
+        <navigator hover-class="none" url="../notification/notification" >
+          <image mode="heightFix" src="/image/center-icon-01.png"></image>
+          <text>公告内容</text>
+        </navigator>
+      </view>
+      <view class="item-main" >
+        <navigator hover-class="none"  url="../college/college">
+          <image mode="heightFix" src="/image/center-icon-02.png"></image>
+          <text>商学院</text>
+        </navigator>
+      </view>
+      <view class="item-main">
+        <navigator url="../earnings/earnings" hover-class="none">
+          <image mode="heightFix" src="/image/center-icon-03.png"></image>
+          <text>收益管理</text>
+        </navigator>
+      </view>
+      <view class="item-main" bindtap="noTap">
+        <!-- url="../feedback/feedback" -->
+        <navigator hover-class="none" >
+          <image mode="heightFix" src="/image/center-icon-04.png"></image>
+          <text>意见反馈</text>
+        </navigator>
+      </view>
+      <view class="item-main">
+        <navigator url="../setting/setting" hover-class="none">
+          <image mode="heightFix" src="/image/center-icon-05.png"></image>
+          <text>设置</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <modal flag="{{showModal}}" promptText="请先完成身份认证！"></modal>
+</view>

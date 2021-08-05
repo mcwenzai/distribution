@@ -1,0 +1,26 @@
+/* pages/components/no-Data/no-Data.wxss */
+.no-data{
+    position: relative;
+    
+}
+.no-data-box{
+    margin: 0 auto;
+}
+.no-data image{
+    display: block;
+    width: 442rpx;
+    height: 360rpx;
+    margin: 0 auto;
+   
+}
+.no-data-box text{
+    position: absolute;
+    text-align: center;
+    height: 23px;
+    font-size: 24rpx;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #C7D1DB;
+    bottom: 62rpx;
+    width: 100%;
+}

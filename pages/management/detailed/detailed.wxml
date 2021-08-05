@@ -1,0 +1,101 @@
+<view class="detailed">
+  <block wx:if="{{cunsId!==3}}">
+    <view class="information-bar">
+      <text>姓名：</text>
+      <text class="name">{{details.userName}}</text>
+    </view>
+    <view class="information-bar">
+      <text>手机号：</text>
+      <text class="name">{{details.phone}}</text>
+    </view>
+    <view class="information-bar">
+      <text>申请代理身份：</text>
+      <text class="name" wx:if="{{details.userType==2}}">商圈代理</text>
+      <text class="name" wx:if="{{details.userType==3}}">合伙人</text>
+      <text class="name" wx:if="{{details.userType==5}}">超级合伙人</text>
+    </view>
+    <view class="information-bar">
+      <text>申请代理城市：</text>
+      <text class="name">{{details.location}}</text>
+    </view>
+    <view class="information-bar">
+      <text>申请商圈：</text>
+      <text class="name">{{details.businessAreaName}}</text>
+    </view>
+    <view class="street">
+      <input type="text"  disabled="disabled" value="{{details.addressTown}}"></input>
+    </view>
+    <view class="information-bar">
+      <text>申请加入时间：</text>
+      <text class="name">{{details.createTime}}</text>
+    </view>
+  </block>
+  <block wx:if="{{cunsId==3}}">
+    <view class="information-bar">
+      <text>店铺名称：</text>
+      <text class="name">{{merchantDetails.companyName}}</text>
+    </view>
+    <view class="information-bar">
+      <text>店铺类型：</text>
+      <text class="name">{{merchantDetails.type==1 ? "厂商" : "商户"}}</text>
+    </view>
+    <view class="information-bar">
+      <text>联系人：</text>
+      <text class="name">{{merchantDetails.storePhone}}</text>
+    </view>
+    <view class="information-bar">
+      <text>店铺地址：</text>
+      <text class="name">{{merchantDetails.location}}</text>
+    </view>
+    <view class="information-bar">
+      <text>申请加入时间：</text>
+      <text class="name">{{merchantDetails.createTime}}</text>
+  </view>
+  </block>
+  <view class="renew">
+    <text>有效时间：</text>
+  </view>
+  <block wx:if="{{cunsId==3}}">
+    <view class="time">
+      <date-picker  dateStr="{{merchantDetails.startTime}}" disabled="{{true}}" mode="dateTime" class="price" placeholder="" bind:onPickerChange="onPickerChangeStartTime"></date-picker >
+      <text></text>
+      <date-picker  dateStr="{{merchantDetails.endTime}}"  disabled="{{true}}" mode="dateTime" class="price" placeholder="" bind:onPickerChange="onPickerChangeEndTime"></date-picker >
+    </view>
+  </block>
+  <block wx:else>
+    <view class="time">
+      <date-picker  dateStr="{{details.startTime}}" disabled="{{details.status!='OVERDUE'}}" mode="dateTime" class="price" placeholder="" bind:onPickerChange="onPickerChangeStartTime"></date-picker >
+      <text></text>
+      <date-picker  dateStr="{{details.endTime}}"  disabled="{{details.status!='OVERDUE'}}" mode="dateTime" class="price" placeholder="" bind:onPickerChange="onPickerChangeEndTime"></date-picker >
+    </view>
+  </block>
+</view>
+<view class="choice" wx:if="{{cunsId==3}}">
+  <view class="contact" wx:if="{{merchantDetails.ban==2}}" bindtap="callPhone">
+    <image mode="widthFix" src="/image/dianhua.png"></image>
+    <text>电话联系</text>
+  </view>
+  <view class="contact" wx:if="{{merchantDetails.ban==2}}" bindtap="remind">
+    <image mode="widthFix" src="/image/tixing.png"></image>
+    <text>提醒</text>
+  </view>
+  <view class="pay" wx:if="{{merchantDetails.ban !=2 }}">
+    <view wx:if="{{merchantDetails.ban == 1}}" bindtap="unfreeze">解冻</view>
+    <view wx:if="{{merchantDetails.ban == 0}}" bindtap="freeze">冻结</view>
+  </view>
+</view>
+<view class="choice"  wx:if="{{cunsId!=3 && cunsId!=5}}">
+  <view class="contact" wx:if="{{details.status=='OVERDUE'}}" bindtap="callPhone">
+    <image mode="widthFix" src="/image/dianhua.png"></image>
+    <text>电话联系</text>
+  </view>
+  <view class="contact" wx:if="{{details.status=='OVERDUE'}}" bindtap="remind">
+    <image mode="widthFix" src="/image/tixing.png"></image>
+    <text>提醒</text>
+  </view>
+  <view class="confirm" wx:if="{{ cunsId!==3 && details.status=='OVERDUE'}}" bindtap="confirmRenewal">确认已续费</view>
+  <view class="pay" wx:if="{{details.status =='NORMAL' || details.status =='FROZEN' }}">
+    <view wx:if="{{details.status =='FROZEN'}}" bindtap="unfreeze">解冻</view>
+    <view wx:if="{{details.status =='NORMAL'}}" bindtap="freeze">冻结</view>
+  </view>
+</view>

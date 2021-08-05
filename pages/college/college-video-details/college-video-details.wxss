@@ -1,0 +1,27 @@
+.college-video-details .video {
+  width: 100%;
+  height: 400rpx;
+}
+.college-video-details .title {
+  padding: 20rpx;
+  line-height: 44rpx;
+  font-size: 28rpx;
+  color: #333333;
+  background: #ffffff;
+}
+.college-video-details .interval {
+  width: 750rpx;
+  height: 20rpx;
+  background: #F9F9F9;
+}
+.college-video-details .synopsis-title {
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+}
+.college-video-details .synopsis-content {
+  padding: 30rpx 40rpx;
+}

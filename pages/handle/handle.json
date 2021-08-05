@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "加入处理",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "date-picker":"../components/date-Picker/date-Picker"
+  }
+}

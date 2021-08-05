@@ -1,0 +1,62 @@
+<view class="achievement">
+  <block wx:if="{{!showModal}}">
+    <view class="notice">
+      <navigator url="../notice/notice">
+        <view class="img">
+          <image mode="widthFix" src="/image/tongzhi.png"></image>
+          <view class="number" wx:if="{{count>0}}">{{count}}</view>
+        </view>
+        <view class="noticelist">
+          <view class="bar">
+            <text>通知</text>
+            <text class="item">{{oneNotice.createTime}}</text>
+          </view>
+          <view class="details">
+            <text wx:if="{{list.length>0}}">{{oneNotice.noticeContent}}</text>
+            <text wx:else>暂无新的通知</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class="information">
+      <block wx:if="{{cunsId!=3}}">
+        <view class="district" bindtap="business" data-type="1" wx:for="{{managements}}" wx:for-item="item" wx:key="id">
+          <view class="information" >
+            <image mode="widthFix" src="{{item.Url}}"></image>
+            <text>{{item.tex}}</text>
+          </view>
+          <image mode="widthFix" class="right" src="/image/xiangyou2.png"></image>
+        </view>
+      </block>
+      <block wx:if="{{cunsId==2}}">
+        <view class="district" bindtap="business" data-type="2">
+          <view class="information">
+            <image mode="widthFix" src="/image/hehuotong_02.png"></image>
+            <text>超级合伙人管理</text>
+          </view>
+          <image mode="widthFix" class="right" src="/image/xiangyou2.png"></image>
+        </view>
+      </block>
+      <block wx:if="{{cunsId==3 || cunsId==5}}">
+        <view class="district" bindtap="goShopManagement">
+          <view class="information">
+            <image mode="widthFix" src="/image/dianpu22.png"></image>
+            <text>店铺管理</text>
+          </view>
+          <image mode="widthFix" class="right" src="/image/xiangyou2.png"></image>
+        </view>
+      </block>
+      <block wx:if="{{cunsId!=3 && cunsId!=5}}">
+        <view class="district" bindtap="cheganDetails">
+          <view class="information">
+            <image mode="widthFix" src="/image/dianpu22.png"></image>
+            <text>店铺明细</text>
+          </view>
+          <image mode="widthFix" class="right" src="/image/xiangyou2.png"></image>
+        </view>
+      </block>
+    </view>
+  </block>
+
+  <modal flag="{{showModal}}" showLeftBtn="{{false}}" bindOnConfirm="onConfirm" promptText="请先完成身份认证！"></modal>
+</view>

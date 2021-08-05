@@ -1,0 +1,66 @@
+<view class="shop">
+  <view class='swiper-notice'>
+    <view class="title"> 
+      <image src="../../image/kuaibao.png"></image>
+    </view>
+    <swiper class='swiper-nav' vertical='true' autoplay='true' circular='true' interval='5000'>
+      <block wx:for='{{noticeList}}' wx:key='unique'>
+        <navigator url="{{'../notification/notification-details/notification-details?id=' + item.id}}" hover-class='none'>
+          <swiper-item>
+            <view class='swiper-context'>{{item.noticeTitle}}</view>
+          </swiper-item>
+        </navigator>
+      </block>
+    </swiper>
+    <view class="more" bindtap="more">
+      更多
+      <view></view>
+    </view>
+  </view>
+  <view class="bar">
+    <picker bindchange="bindPickerChange" disabled="{{pickerList.length==0}}" value="{{pickerIndex}}"
+      range="{{pickerList}}" range-key="townName">
+      <view class="location">
+        <text>{{sleectValue ? sleectValue : cityName}}</text>
+        <image mode="widthFix" src="/image/dingwei.png" wx:if="{{!pickerList.length==0}}"></image>
+      </view>
+    </picker>
+    <view class="whole" bindtap="change">
+      <text>{{statusName}}({{count}}家)</text>
+      <image mode="widthFix" src="/image/xiala.png"></image>
+    </view>
+    <view class="status" wx:if="{{status}}">
+      <view class="name {{item.checkeds?'change':''}}" wx:for="{{state}}" data-ban="{{item.ban}}" data-index="{{index}}"
+        data-id="{{item.id}}" wx:key="id" bindtap="checkeds">{{item.name}}</view>
+    </view>
+  </view>
+  <scroll-view scroll-y="true" class="scroll-view-box" >
+    <!-- 11 -->
+    <view class="box">
+      <no-data show="{{merchantList.length <= 0}}"></no-data>
+  <view class="store-information" wx:for="{{merchantList}}" wx:key="index">
+    <view class="img">
+      <image src="{{item.logoUrl}}"></image>
+    </view>
+    <view class="information">
+      <view class="name">
+        <view class="type">{{item.type==2 ? "商户" : "厂商"}}</view>
+        <text>{{item.companyName}}</text>
+      </view>
+      <view class="position">
+        <text class="iconfont icondingwei"></text>
+        <text>{{item.shopAddress}}</text>
+
+      </view>
+      <view class="category">
+        <text>主营品类：</text>
+        <text>{{item.mainCategoryNames}}</text>
+      </view>
+    </view>
+  </view>  
+    </view>
+   
+  </scroll-view>
+  
+
+</view>

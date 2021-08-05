@@ -1,0 +1,28 @@
+/* pages/notification/notification-details/notification-details.wxss */
+.notification-details{
+    background: #F9F9F9;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.content{
+    width: 710rpx;
+    margin: 20rpx auto 0;
+    background: #ffffff;
+    padding:40rpx 16rpx 40rpx 16rpx;
+    box-sizing: border-box;
+}
+.title{
+    color: #333333;
+    font-size:28rpx
+}
+.time{
+    color: #999999;
+    font-size:22rpx;
+    margin-top: 20rpx;
+}
+.rich-text{
+    margin-top: 40rpx;
+}
+.rich-text img{
+    display: block;
+}

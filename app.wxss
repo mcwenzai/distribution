@@ -1,0 +1,68 @@
+/**app.wxss**/
+@import "./style/iconfont.wxss";
+page{
+  --themeColor:#F85861;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  font-family: PingFang SC;
+  margin: 0;
+  padding: 0;
+}
+checkbox .wx-checkbox-input{
+  border-radius: 50%;/* 圆角 */
+  width: 24rpx; /* 背景的宽 */
+  height: 24rpx; /* 背景的高 */
+  box-sizing: border-box;
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  border: none;
+  background: var(--themeColor);
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  border-radius: 50%;/* 圆角 */
+  width: 24rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 24rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 24rpx;
+  text-align: center;
+  font-size:16rpx; /* 对勾大小 30rpx */
+  color:#fff; /* 对勾颜色 白色 */
+  background: transparent;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}
+radio .wx-radio-input{
+  border-radius: 50%;/* 圆角 */
+  width: 28rpx; /* 背景的宽 */
+  height: 28rpx; /* 背景的高 */
+  box-sizing: border-box;
+}
+radio .wx-radio-input.wx-radio-input-checked{
+  border: none;
+  background: var(--themeColor);
+}
+radio .wx-radio-input.wx-radio-input-checked::before{
+  border-radius: 50%;/* 圆角 */
+  width: 28rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 28rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 28rpx;
+  text-align: center;
+  font-size:20rpx; /* 对勾大小 30rpx */
+  color:#fff; /* 对勾颜色 白色 */
+  background: transparent;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}
+#choose{
+  position: fixed;
+  top: 330rpx;
+  left: 95rpx;
+  z-index: 3;
+}

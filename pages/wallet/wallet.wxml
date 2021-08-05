@@ -1,0 +1,64 @@
+<view class="wallet">
+  <rule id="Rule" bind:error="onCancel"></rule>
+        <rule  flag="{{desClose}}" bind:error="close" title="可提现余额" ruleList="{{ruleList}}"></rule>
+  <view class="withdrawal">
+    <image src="../../image/qianbao.png"></image>
+    <view class="column">
+      <view class="rule">
+        <view class="description" bindtap="Viewrules">
+          <text>提现规则</text>
+        </view>
+        
+      </view>
+      <view class="number">
+        <view class="balance">
+          <view class="title" bindtap="show">可提现余额(元)<image mode="widthFix" src="/image/yiwen_black.png "></image></view>
+          
+          <text class="money">{{balance ? balance : 0}}</text>
+         
+        </view>
+        <view class="goods">
+          <navigator url="../withdrawal/withdrawal">
+            <text>去提现</text>
+            <image mode="widthFix" src="/image/xiangyou.png"></image>
+          </navigator>
+        </view>
+      </view>
+      <view class="received">
+        <!-- url="../received/received" -->
+       
+        <text>未到账余额(元)：</text>
+        <text>{{notArrivalAmount ?notArrivalAmount :0 }}</text>
+        <!-- <image mode="widthFix" src="/image/xiangyou.png"></image> -->
+        
+      </view>
+    </view>
+  </view>
+  <view class="detailed">
+    <view class="order-detailed">
+      <text>订单明细</text>
+      <view class="see">
+        <navigator url="../order-details/order-details">
+          <text>查看更多明细</text>
+          <image mode="widthFix" src="/image/xiangyou2.png"></image>
+        </navigator>
+      </view>
+    </view>
+    
+    <view class="detailed-column" wx:for="{{list}}" wx:key="index">
+      <view class="name">
+        <text>{{item.type=='1' ? '厂商' : '商户'}}-{{item.source=='1' ? "交易订单" : '推荐费'}}</text>
+        <text class="price">+ {{item.arrivalAmount}}元</text>
+      </view>
+      <view class="cost">
+        <text>{{item.source=='1' ? "订单编号" : '流水号'}}：</text>
+        <text>{{item.source=='1' ? item.orderNo : item.fundId}}</text>
+      </view>
+      <view class="cost" wx:if="{{item.source==1}}">
+        <text>支付时间：</text>
+        <text>{{item.createTime}}</text>
+      </view>
+    </view>
+    <no-data show="{{list.length<=0}}" title="暂无明细"></no-data>
+  </view>
+</view>

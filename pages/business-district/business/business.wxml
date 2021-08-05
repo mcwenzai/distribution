@@ -1,0 +1,31 @@
+<view class="district">
+  <view class="choice">
+    <address id="ress" bind:error="onCancel" bind:success="onConfirm" cityCode="{{cityCodeId}}" detailsStreetList="{{detailsStreetList}}"></address>
+    <view class="setup" bindtap="RessIdentity">
+      <view class="business">
+        <text class="asterisk">*</text>
+        <text>设置商圈：</text>
+        <input type="text"  disabled="disabled" placeholder="{{selectElementList.length == 0 ? '请设置商圈' : selectElementList[0].townName}}"></input>
+        
+      </view>
+      <image mode="widthFix" src="/image/xiangyou2.png"></image>
+    </view>
+    <view class="stre-name">
+      <view class="street" wx:for="{{selectElementList}}" wx:key="index">
+        <text>{{item.townName}}</text>
+        <view class="img-box" bindtap="delElement" data-index="{{index}}">
+          <image mode="widthFix" src="/image/guanbi.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="setup-name">
+      <text class="asterisk">*</text>
+      <text>商圈名称：</text>
+      <input type="text" value="{{name}}" placeholder="请设置商圈名称" bindinput="nameInput"></input>
+    </view>
+  </view>
+  <view class="option">
+    <view class="cancel"  bindtap="cancel">取消</view>
+    <view class="preservation" bindtap="save">保存</view>
+  </view>
+</view>

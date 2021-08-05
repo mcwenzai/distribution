@@ -1,0 +1,97 @@
+.modal-mask {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.4;
+  overflow: hidden;
+  z-index: 9000;
+}
+.modal-dialog {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 902rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx 24rpx 0rpx 0rpx;
+  z-index: 9999;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.modal-dialog .title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 36rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+}
+.modal-dialog .region {
+  margin-top: 12rpx;
+}
+.modal-dialog .region .region-tabs{
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  padding: 0 20rpx;
+}
+.modal-dialog .region .region-tabs .tab{
+  /* width: 122rpx; */
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 900;
+  position: relative;
+  min-width: 122rpx;
+}
+.modal-dialog .region .region-tabs .active:after{
+  content: "";
+  position: absolute;
+  width: 80rpx;
+  height: 6rpx;
+  background: var(--themeColor);
+  bottom: 0;
+  left: 50%;
+  margin-left:-40rpx;
+}
+.select-scroll{
+  height: 738rpx;
+ 
+}
+.select-scroll .select-line{
+  height: 82rpx;
+  box-sizing: border-box;
+  border-top: 1px solid #F9F9F9;
+  line-height: 82rpx;
+  padding-left: 40rpx;
+}
+.select-line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.select-line image{
+  display:block;
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 40rpx;
+}
+.modal-dialog .close{
+  width: 60rpx;
+  height: 40rpx;
+  background: #F5F5F5;
+  border-radius: 0px 20rpx 0px 20rpx;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+}
+.modal-dialog .close image{
+  display: block;
+  width: 18rpx;
+  height: 18rpx;
+}

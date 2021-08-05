@@ -1,0 +1,22 @@
+<view class="business">
+  <view class="district">
+    <view class="city">
+      <text>代理城市：</text>
+      <text>{{location}}</text>
+    </view>
+    <view class="setup">
+      <view class="name" bindtap="bindsues">设置商圈</view>
+      <image mode="widthFix" class="doubt" bindtap="explaIdentity" src="/image/yiwen.png"></image>
+      <explain id="expla" myValue="{{2}}" bind:error="onCancelss"></explain>
+    </view>
+  </view>
+  <no-data show="{{businessList.length<=0}}"></no-data>
+  <view class="business-name" wx:for="{{businessList}}" wx:key="index"> 
+    <text>{{item.businessAreaName}}</text>
+    <view class="change">
+      <image mode="widthFix" class="modify" data-code="{{item.businessAreaCode}}" bindtap="edit" src="/image/xiugai.png"></image>
+      <image mode="widthFix" data-code="{{item.businessAreaCode}}" bindtap="promptked" class="delete" src="/image/shanchu.png"></image>
+      <delete-prompt id="prompt" flag="{{showDel}}" bind:dele="onDelete" bind:success="onConfir"></delete-prompt>
+    </view>
+  </view>
+</view>

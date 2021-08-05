@@ -1,0 +1,30 @@
+<view class="payment">
+  <!-- <view class="information">
+    <view class="price">
+      <text>￥</text>
+      <text class="number">300</text>
+    </view>
+    <view class="cost">身份认证费用</view>
+    <view class="money">
+      <text>缴费金额</text>
+      <text>￥300</text>
+    </view>
+    <view class="order-number">
+      <text>缴费单号</text>
+      <text>7482749120975489</text>
+    </view>
+    <view class="method">
+      <text class="payment-method">付款方式</text>
+      <view class="choice">
+        <view class="wechat">
+          <image mode="widthFix" src="/image/weixin.png"></image>
+          <text>微信支付</text>
+        </view>
+        <checkbox-group bindtap="Confirmchenge">
+          <checkbox color="var(--themeColor)" value="{{checked}}"></checkbox>
+        </checkbox-group>
+      </view>
+    </view>
+  </view>
+  <view class="confirm {{!checked?'none-checked':'more-checked'}}">确认支付</view> -->
+</view>

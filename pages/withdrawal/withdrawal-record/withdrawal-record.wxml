@@ -1,0 +1,20 @@
+<view class="record">
+  <no-data show="{{list.length<=0}}" title="暂无提现记录"></no-data>
+  <view class="details" wx:for="{{list}}" wx:key="index">
+    <navigator url="{{'../transaction-details/transaction-details?id='+ item.id}}">
+        <view class="information">
+        <view class="money">
+          <text>提现-银行卡</text>
+          <text class="price">{{item.money}}元</text>
+        </view>
+        <view class="time">
+          <text>{{item.createTime}}</text>
+          <text class="success" wx:if="{{item.status==1}}">提现成功</text>
+          <text class="process" wx:if="{{item.status==0}}">处理中</text>
+          <text class="fail" wx:if="{{item.status==2}}">提现失败，已返还</text>
+        </view>
+      </view>
+      <image mode="widthFix" src="/image/xiangyou2.png"></image>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,49 @@
+.partner-up {
+  min-height: 100vh;
+  padding-bottom: env(safe-area-inset-bottom);
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-content: space-between;
+}
+.partner-up .banner {
+  display: block;
+  width: 750rpx;
+  height: 280rpx;
+  margin: 0 auto;
+}
+.partner-up .interests .title {
+  font-weight: bold;
+  color: #333333;
+  font-size: 28rpx;
+  padding: 30rpx 0 0 40rpx;
+}
+.partner-up .interests .icons {
+  display: flex;
+  padding: 40rpx 28rpx 0;
+}
+.partner-up .interests .icons .icon {
+  width: 33.33%;
+  text-align: center;
+}
+.partner-up .interests .icons .icon image {
+  width: 68rpx;
+  height: 68rpx;
+  display: block;
+  margin: 0 auto 22rpx;
+}
+.partner-up .interests .icons .icon text {
+  font-size: 24rpx;
+}
+.partner-up .up-btn {
+  width: 670rpx;
+  height: 84rpx;
+  background: #F85861;
+  box-shadow: 0px 0px 8rpx 0px #F85861;
+  border-radius: 42rpx;
+  color: #FFFFFF;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 84rpx;
+  margin: 0 auto 10rpx;
+}

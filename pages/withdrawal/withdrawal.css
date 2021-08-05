@@ -1,0 +1,150 @@
+page {
+  min-height: 100%;
+  background: #FBF9FD;
+}
+.withdrawal {
+  width: 100%;
+  position: relative;
+}
+.withdrawal .apply {
+  width: 710rpx;
+  height: 250rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx 24rpx 0rpx 0rpx;
+  margin: 20rpx 20rpx 0;
+  padding-top: 32rpx;
+}
+.withdrawal .apply .amount {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+  margin-left: 32rpx;
+}
+.withdrawal .apply .price {
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #EEE;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+  margin-right: 34rpx;
+  margin-left: 32rpx;
+}
+.withdrawal .apply .price text {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333;
+}
+.withdrawal .apply .price input {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+  margin-left: 28rpx;
+}
+.withdrawal .apply .cash {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-right: 32rpx;
+  margin-top: 28rpx;
+  margin-left: 32rpx;
+}
+.withdrawal .apply .cash .number text {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #666;
+}
+.withdrawal .apply .cash .number .money {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #F76C3F;
+}
+.withdrawal .apply .cash .whole {
+  width: 132rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  text-align: center;
+  background: var(--themeColor);
+  border-radius: 22rpx;
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #fff;
+}
+.withdrawal .mode {
+  width: 710rpx;
+  height: 156rpx;
+  background: #FFFFFF;
+  border-radius: 0rpx 0rpx 24rpx 24rpx;
+  padding-top: 32rpx;
+  margin: 4rpx 20rpx 0;
+}
+.withdrawal .mode .account {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+  margin-left: 32rpx;
+}
+.withdrawal .mode .bankcard {
+  margin-top: 39rpx;
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-left: 32rpx;
+}
+.withdrawal .mode .bankcard image {
+  width: 34rpx;
+  height: 24rpx;
+}
+.withdrawal .mode .bankcard text {
+  margin-left: 24rpx;
+}
+.withdrawal .determine {
+  width: 650rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  text-align: center;
+  border-radius: 42rpx;
+  margin: 80rpx 50rpx 0;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #fff;
+}
+.withdrawal .more-checked {
+  background: var(--themeColor);
+}
+.withdrawal .none-checked {
+  background: #ccc;
+}
+.withdrawal .agree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 33rpx;
+}
+.withdrawal .agree checked-group {
+  display: inline-block;
+}
+.withdrawal .agree text {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #333;
+}
+.withdrawal .agree .explain {
+  color: var(--themeColor);
+}
+.withdrawal .record {
+  position: fixed;
+  bottom: 80rpx;
+  left: 294rpx;
+}
+.withdrawal .record text {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #333;
+}
+.withdrawal .record image {
+  width: 10rpx;
+  height: 18rpx;
+  margin-left: 11rpx;
+}

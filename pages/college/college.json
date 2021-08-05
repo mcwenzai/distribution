@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "no-data":"../components/no-Data/no-Data"
+  },
+  "navigationBarTitleText": "商学院"
+}

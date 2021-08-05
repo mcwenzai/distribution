@@ -1,0 +1,6 @@
+<view class="no-data" wx:if="{{show}}">
+    <view class="no-data-box">
+        <image src="../../../image/no-data.png" style="margin-top:{{top}}rpx"></image>
+        <text>{{title}}</text>
+    </view>
+</view>

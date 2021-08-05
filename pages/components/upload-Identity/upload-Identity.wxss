@@ -1,0 +1,199 @@
+.upload {
+  width: 100%;
+  min-height: 100vh;
+  background: #FFFFFF;
+  margin-top: 10rpx;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.upload .laobe {
+  padding-top: 30rpx;
+  margin-left: 20rpx;
+}
+.upload .picture {
+  width: 680rpx;
+  height: 278rpx;
+  background: #F6F8FC;
+  border-radius: 12rpx;
+  margin: 28rpx 35rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.upload .picture .noodles {
+  display: flex;
+  flex-direction: column;
+  margin-left: 39rpx;
+  margin-top: -90rpx;
+}
+.upload .picture .noodles text {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #999;
+  margin-top: 18rpx;
+}
+.upload .picture .noodles .name {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+}
+.upload .picture .img {
+  width: 330rpx;
+  height: 196rpx;
+  margin-right: 33rpx;
+  display: block;
+  overflow: hidden;
+}
+.upload .picture .img image {
+  width: 330rpx;
+  height: 196rpx;
+  overflow: hidden;
+}
+.upload .real-name {
+  display: flex;
+  align-items: center;
+  height: 98rpx;
+  line-height: 98rpx;
+  border-bottom: 1px solid #FBF9FD;
+}
+.upload input{
+  height: 98rpx;
+  line-height: 98rpx;
+ 
+}
+.upload .lable{
+  height: 98rpx;
+  line-height: 98rpx;
+  display: flex;
+  padding-left: 20rpx;
+}
+.upload .real-name .agent {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+  margin-left: 85rpx;
+}
+.upload .bank-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.upload .bank-card .city {
+  margin-left: -80rpx;
+}
+.upload .bank-card image {
+  width: 10rpx;
+  height: 18rpx;
+  margin-right: 35rpx;
+}
+.upload .agreement {
+  margin-bottom: 35rpx;
+}
+.upload .agreement .photo {
+  width: 200rpx;
+  height: 140rpx;
+  background: #ECEFFF;
+  border-radius: 4rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32rpx;
+  margin-left: 35rpx;
+}
+.upload .agreement .photo image {
+  width: 39rpx;
+  height: 35rpx;
+}
+.upload .agreement .photo text {
+  font-size: 20rpx;
+  font-weight: bold;
+  color: #BBC5FF;
+  margin-top: 11rpx;
+}
+.upload .submit {
+  height: 168rpx;
+  border-top: 4rpx solid #EAEAEA;
+}
+.upload .submit .determine {
+  width: 640rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  margin: 20rpx 50rpx 0;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #FBF9FD;
+}
+.upload .submit .more-checked {
+  background: var(--themeColor);
+}
+.upload .submit .none-checked {
+  background: #ccc;
+}
+.upload .submit .clause {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18rpx;
+  margin-bottom: 22rpx;
+}
+.upload .submit .clause text {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #333;
+  margin-top: 10rpx;
+}
+.upload .submit .clause .details {
+  color: var(--themeColor);
+}
+.required {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #F76C3F;
+}
+.id {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #999;
+}
+input {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+
+}
+.bank-input{
+  margin-left: 0rpx;
+}
+.upload  .bank-card-one{
+  justify-content: flex-start;
+}
+.name-input{
+  width: 70%;
+}
+ 
+element.style {
+    height: 17.0513px;
+}
+.upload  .agreement .photo .update-photo{
+  display: block;
+  width:200rpx ;
+  height: 140rpx;
+}
+.street{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rpx 30rpx;
+}
+.street .name{
+  font-size: 22rpx;
+  font-weight: bold;
+  color: var(--themeColor);
+  background: #FBF9FD;
+  border-radius: 26rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  padding:0 20rpx;
+  margin: 10rpx;
+}

@@ -1,0 +1,9 @@
+<!--pages/college/college.wxml-->
+<view class="college">
+    <no-data show="{{list.length <= 0}}"></no-data>
+    <view class="cell" bindtap="details" wx:for="{{list}}" data-title="{{item.categoryName}}" wx:key="index" > 
+        <!-- <image class="icon" src="../../image/college_01.png"></image> -->
+        <text>{{item.categoryName}}</text>
+        <image class="right" src="../../image/right.png"></image>
+    </view>
+</view>

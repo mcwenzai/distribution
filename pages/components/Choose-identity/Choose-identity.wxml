@@ -1,0 +1,19 @@
+<view wx:if="{{flag}}">
+  <view class="modal-mask" ></view>
+  <view class="selection">
+    <view class="img"  bindtap="onCancel">
+      <image mode="widthFix"  src="/image/guanbi.png"></image>
+    </view>
+    <view class="identity">选择身份</view>
+      <view class="choose {{item.shopChencked==true?'checkeds':''}}" bindtap="handleChecked" wx:for="{{identity}}" data-id="{{item.id}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        <view class="agent">
+          <image mode="heightFix" src="{{item.url}}"></image>
+          <text class="name">{{item.name}}</text>
+        </view>
+        <radio-group >
+          <radio color="var(--themeColor)" value="{{item.id}}" checked="{{item.shopChencked}}"></radio>
+        </radio-group>
+      </view>
+      <view class="determine" bindtap='onConfirm'>确定</view>
+  </view>
+</view>

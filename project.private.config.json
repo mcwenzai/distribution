@@ -1,0 +1,246 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "身份验证",
+                    "pathName": "pages/verification/verification",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "收益管理",
+                    "pathName": "pages/earnings/earnings",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "历史收益",
+                    "pathName": "pages/earnings/historicalEarnings/historicalEarnings",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "代理详情",
+                    "pathName": "pages/management/detailed/detailed",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "消息处理",
+                    "pathName": "pages/handle/handle",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "个人设置",
+                    "pathName": "pages/setting/setting",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "个人信息",
+                    "pathName": "pages/setting/user-info/user-info",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "账号与安全",
+                    "pathName": "pages/setting/security/security",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "修改密码",
+                    "pathName": "pages/setting/change-password/change-password",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "确认修改密码",
+                    "pathName": "pages/setting/affirm-password/affirm-password",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "登陆",
+                    "pathName": "pages/login/login",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "注册",
+                    "pathName": "pages/login/register/register",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "忘记密码",
+                    "pathName": "pages/login/forget/forget",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "个人中心",
+                    "pathName": "pages/my/my",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "邀请注册",
+                    "pathName": "pages/login/inviteRegister/inviteRegister",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "业绩",
+                    "pathName": "pages/achievement/achievement",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "市级代理查看商圈",
+                    "pathName": "pages/business-district/business-district",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "店铺明细",
+                    "pathName": "pages/shop-details/shop-details",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "商圈管理",
+                    "pathName": "pages/management/management",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "代理詳情",
+                    "pathName": "pages/management/detailed/detailed",
+                    "query": "phone=15341438520",
+                    "scene": null
+                },
+                {
+                    "name": "店鋪明細",
+                    "pathName": "pages/shop-details/shop-details",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "设置商圈",
+                    "pathName": "pages/business-district/business-district",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "設置商圈",
+                    "pathName": "pages/business-district/business/business",
+                    "query": "code=4564",
+                    "scene": null
+                },
+                {
+                    "name": "個人信息",
+                    "pathName": "pages/setting/user-info/user-info",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "通知",
+                    "pathName": "pages/notice/notice",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "超级合伙人店铺管理",
+                    "pathName": "pages/achievement/shopManagement/ShopManagement",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "我的钱包",
+                    "pathName": "pages/wallet/wallet",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "提现记录",
+                    "pathName": "pages/withdrawal/withdrawal-record/withdrawal-record",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "提现页面",
+                    "pathName": "pages/withdrawal/withdrawal",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "交易详情",
+                    "pathName": "pages/withdrawal/transaction-details/transaction-details",
+                    "query": "id=3cc31074-1b94-4d3c-9b5c-10842accc797",
+                    "scene": null
+                },
+                {
+                    "name": "通知公告",
+                    "pathName": "pages/notification/notification",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "公告详情",
+                    "pathName": "pages/notification/notification-details/notification-details",
+                    "query": "id=7b67c056-cc7e-4446-9459-4a941e79f226",
+                    "scene": null
+                },
+                {
+                    "name": "用户协议",
+                    "pathName": "pages/userAgreement/userAgreement",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "合伙人升级",
+                    "pathName": "pages/partner-up/partner-up",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "商学院",
+                    "pathName": "pages/college/college",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "商学院-详情",
+                    "pathName": "pages/college/college-details/college-details",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "商学院-视频播放",
+                    "pathName": "pages/college/college-video-details/college-video-details",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/business-district/business/business",
+                    "pathName": "pages/business-district/business/business",
+                    "query": "code=e37305d1-b935-4a17-af1a-acd6b1adf130",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

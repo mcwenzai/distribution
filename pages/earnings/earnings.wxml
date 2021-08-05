@@ -1,0 +1,96 @@
+<view class="earnings-container">
+  <view class="header">
+    <view class="tabs">
+      <view data-index="{{index}}" bindtap="selectTabs" wx:key="index" class="option {{item.isActive ? 'active' : ''}}"
+        wx:for="{{tabsList}}">{{item.title}}</view>
+    </view>
+
+    <view class="money-total">
+      <view class="img-box" bindtap="show">
+        <image src="../../image/yiwen-blue.png"></image>
+      </view>
+     <block wx:if="{{!tabsList[1].isActive}}">
+      <view class="money-total-title">
+        本月收益(元)
+      </view>
+      <view class="money-total-money">
+        {{totalAmountMonth ? totalAmountMonth : 0}}
+      </view>
+     </block>
+     <block wx:else>
+      <view class="money-total-title">
+        累计收益(元)
+      </view>
+      <view class="money-total-money">
+        {{totalAmount ? totalAmount : 0 }}
+      </view>
+     </block>
+    </view>
+
+    <view class="accumulative" wx:if="{{tabsList[1].isActive}}">
+      <view class="earnings">
+        <view class="lable">今日收益：</view>
+        <view class="money">
+          <view class="num">{{todayAmount}}</view>
+          <view class="unit">元</view>
+        </view>
+      </view>
+      <view class="earnings">
+        <view class="lable">本周收益：</view>
+        <view class="money">
+          <view class="num">{{weekAmount}}</view>
+          <view class="unit">元</view>
+        </view>
+      </view>
+      <view class="earnings">
+        <view class="lable">本月收益：</view>
+        <view class="money">
+          <view class="num">{{monthAmount}}</view>
+          <view class="unit">元</view>
+        </view>
+      </view>
+      <view class="earnings">
+        <view class="lable">上月收益：</view>
+        <view class="money">
+          <view class="num">{{lastMonthAmount}}</view>
+          <view class="unit">元</view>
+        </view>
+      </view>
+      <view class="histogram">
+        <view class="histogram-title">
+          <view class="line"></view>
+          <view class="text">七日收益柱状图</view>
+        </view>
+        <view class="histogram-content">
+          <view class="arborescence-info" wx:for="{{histogramList}}" wx:key="index">
+            <view class="num">{{item.arrivalAmount}}</view>
+            <view class="progress" style="height:{{item.height}}rpx"></view>
+          </view>
+        </view>
+        <view class="histogram-date">
+          <view class="arborescence-info" wx:for="{{histogramList}}" wx:key="index">
+            {{item.createTime}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="month-income-details" wx:if="{{tabsList[0].isActive}}">
+      <view class="details-title">
+        <view class="details-title-left">
+          <view class="stick"></view>
+          <view class="text">收益明细</view>
+        </view>
+        <view class="details-title-right" bindtap="gotoHistory">
+          查看历史数据 >
+        </view>
+      </view>
+      <earnings-details-list  list="{{presentMonth}}"></earnings-details-list>
+     <no-data show="{{presentMonth.length<=0}}"></no-data>
+      
+      
+    </view>
+
+  </view>
+  <rule  flag="{{desCloseMonth}}" bind:error="close" title="本月收益" ruleList="{{ruleListMonth}}"></rule>
+  <rule  flag="{{desCloseTotal}}" bind:error="close" title="累计收益" ruleList="{{ruleListTotal}}"></rule>
+</view>

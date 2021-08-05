@@ -1,0 +1,66 @@
+.college-details {
+  min-height: 100vh;
+  background: #FBF9FD;
+  overflow: hidden;
+}
+.college-details .nav {
+  display: flex;
+  height: 88rpx;
+  text-align: center;
+  background: #ffffff;
+}
+.college-details .nav .title {
+  width: 50%;
+  line-height: 88rpx;
+  font-weight: bold;
+  color: #333333;
+  font-size: 28rpx;
+  position: relative;
+}
+.college-details .nav .active {
+  position: relative;
+  color: #E95151;
+}
+.college-details .nav .active::before {
+  content: '';
+  position: absolute;
+  width: 120rpx;
+  height: 8rpx;
+  background: #E6111D;
+  border-radius: 4rpx;
+  bottom: 0;
+  left: 50%;
+  margin-left: -60rpx;
+}
+.college-details .content {
+  width: 710rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+  margin: 20rpx auto 0;
+  background: #ffffff;
+}
+.college-details .content .img {
+  width: 710rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+  position: relative;
+}
+.college-details .content .img .bgc {
+  display: block;
+  width: 710rpx;
+  height: 380rpx;
+  border-radius: 12rpx;
+}
+.college-details .content .img .play {
+  width: 62rpx;
+  height: 62rpx;
+  position: absolute;
+  top: 160rpx;
+  left: 50%;
+  margin-left: -30rpx;
+}
+.college-details .content .text {
+  padding: 20rpx;
+  font-size: 26rpx;
+  line-height: 40rpx;
+}

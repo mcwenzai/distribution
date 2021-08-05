@@ -1,0 +1,42 @@
+/* pages/setting/security/security.wxss */
+.security{
+  min-height: 100vh;
+  background-color: #FBF9FD;
+  overflow: hidden;
+}
+.cell{
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  justify-content: space-between;
+  padding: 0 20rpx 0  40rpx;
+  align-items: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #333333;
+  margin-bottom: 1px;
+  /* margin-bottom: 1px; */
+}
+.cell-right{
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  align-items: center;
+}
+.cell-right image{
+  display: block;
+  width: 14rpx;
+  height: 24rpx; 
+  margin-left: 16rpx;
+}
+.cell-top{
+  margin-top: 1px;
+  margin-bottom: 16rpx;
+}
+.password{
+  color: #999999;
+}
+.phone image{
+  opacity: 0;
+}

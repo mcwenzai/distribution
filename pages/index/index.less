@@ -1,0 +1,217 @@
+page{
+  min-height: 100%;
+  background: #FBF9FD;
+}
+.shop{
+  width: 100%;
+  .bar{
+    width: 100%;
+    height: 88rpx;
+    background:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .status{
+      position: absolute;
+      width: 140rpx;
+      background: #FFFFFF;
+      box-shadow: 0rpx 0rpx 6rpx 0rpx rgba(0, 0, 0, 0.2);
+      border-radius: 12rpx;
+      z-index: 99;
+      right:20rpx;
+      top: 88rpx;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      padding: 10rpx  0;
+      
+      .name{
+        width: 100%;
+        text-align: center;
+        font-size: 24rpx;
+        font-weight: 500;
+        color: #333;
+        padding: 10rpx 0;
+      }
+      .change{
+        color: var(--themeColor);
+      }
+    }
+    .location{
+      margin-left: 20rpx;
+      display: flex;
+      align-items: center;
+      text{
+        font-size: 28rpx;
+        font-weight: bold;
+        color: var(--themeColor);
+      }
+      image{
+        width: 20rpx;
+        height: 14rpx;
+        margin-left: 16rpx;
+        margin-top: 4rpx;
+      }
+    }
+    .whole{
+      margin-right: 20rpx;
+      text{
+        font-size: 28rpx;
+        font-weight: bold;
+        color: #333333;
+      }
+      image{
+        width: 22rpx;
+        height: 20rpx;
+        margin-left: 12rpx;
+      }
+    }
+  }
+  .store-information{
+    width: 710rpx;
+    height: 192rpx;
+    background: #FFFFFF;
+    border-radius: 12rpx;
+    margin: 20rpx 20rpx 0;
+    display: flex;
+    align-items: center;
+    .img{
+      width: 160rpx;
+      height: 160rpx;
+      margin-left: 16rpx;
+      image{
+        width: 160rpx;
+        height: 160rpx;
+        display: block;
+        flex-shrink: 0;
+      }
+    }
+    .information{
+      display: flex;
+      flex-direction: column;
+      margin-left: 29rpx;
+      .name{
+        display: flex;
+        font-weight: bold;
+        .type{
+          width: 68rpx;
+          height: 32rpx;
+          line-height: 32rpx;
+          text-align: center;
+          background: #F85861;
+          border-radius: 4rpx;
+          font-size: 20rpx;
+          color: #fff;
+        }
+        text{
+          height: 32rpx;
+          line-height: 32rpx;
+          font-size: 28rpx;
+          color: #333;
+          margin-left: 12rpx;
+        }
+      }
+      .position{
+        margin-top: 20rpx;
+        font-size: 22rpx;
+        font-weight: 500;
+        color: #999;
+        display: flex;
+        align-items: center;
+      }
+      .category{
+        margin-top: 20rpx;
+        font-size: 26rpx;
+        font-weight: bold;
+        color: #333333;
+        width:480rpx;
+        
+        height: 30rpx;
+        // padding-right: 40rpx;
+        // box-sizing: border-box;
+        overflow: hidden;
+        white-space: nowrap;/*不换行*/
+          text-overflow:ellipsis;/*超出部分文字以...显示*/
+      }
+    }
+  }
+}
+.swiper-notice {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  margin-bottom: 2rpx;
+  .more{
+    width: 114rpx;
+    font-size: 26rpx;
+    color: #999999;
+    line-height: 70rpx;
+    text-align: center;
+    position: relative;
+    view{
+      position: absolute;
+      width: 2rpx;
+      height: 24rpx;
+      left: 0;
+      top: 50%;
+      margin-top: -12rpx;
+      background: #A2A2A2;
+    }
+  }
+  .title{
+    display: flex;
+    width: 130rpx;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70rpx;
+    line-height: 70rpx;
+    color: #333333;
+    font-weight: 900;
+    image{
+      display: block;
+      flex-shrink: 0;
+      width: 73rpx;
+      height: 32rpx;
+      margin-left: 40rpx;
+    }
+  }
+}
+
+.swiper-notice text {
+  font-size: 28rpx;
+  color: #333333;
+  
+}
+
+
+
+.swiper-nav {
+  height: 60rpx;
+  flex: 1;
+}
+
+.swiper-nav swiper-item {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-context {
+  font-size: 26rpx;
+  overflow: hidden;
+  color: #333333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 2rpx;
+}
+.scroll-view-box{
+  height: calc(100vh - 70rpx - 88rpx - 98rpx);
+  box-sizing: border-box;
+  padding-bottom: env(safe-area-inset-bottom);
+  // height: 400rpx;
+  .box{
+    overflow: hidden;
+  }
+}

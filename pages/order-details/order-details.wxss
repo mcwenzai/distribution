@@ -1,0 +1,37 @@
+page {
+  min-height: 100%;
+  background: #FBF9FD;
+}
+.order-details {
+  width: 100%;
+}
+.order-details .order {
+  margin-top: 12rpx;
+}
+.order-details .order .detailed-column {
+  height: 156rpx;
+  background: #fff;
+  margin-top: 2rpx;
+  padding: 0 20rpx;
+}
+.order-details .order .detailed-column .name {
+  padding-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.order-details .order .detailed-column .name text {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #333;
+}
+.order-details .order .detailed-column .name .price {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #F76C3F;
+}
+.order-details .order .detailed-column .cost text {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #999;
+}
